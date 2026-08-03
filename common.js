@@ -89,14 +89,14 @@
         { name: '元初', role: '社群运营 / 皮肤画师', desc: '元初不但擅长MC皮肤绘制，还擅长指绘，他的风格多样，在多个平台都得到了很多人的喜爱。同时元初和元谋一起完成了多个音mad鬼畜企划，负责视频剪辑工作。', avatar: 'fa-solid fa-microchip', color: '#10b981', image: 'images/yc.webp' },
         { name: '空空', role: '建筑作者 / 玩法地图作者 / 建筑策划', desc: '空空擅长现代风、中世纪风的建筑创作，参与了团队组织多个地图立项的活动。', avatar: 'fa-solid fa-paint-brush', color: '#ef4444', image: 'images/kk.webp' },
         { name: '挽留', role: '玩法地图作者 / 指令师', desc: '挽留精通玩法地图的策划与实现落地，打造了《杀戮迷宫》、《末日之后》等多个爆款地图，同时挽留还是经验丰富的指令师，对团队做出了不可磨灭的贡献。', avatar: 'fa-solid fa-user-tie', color: '#06b6d4', image: 'images/wl.webp' },
+        { name: '亨升', role: '建筑作者 / 古建筑设计师', desc: '亨升精通明清古建筑风格设计与建造，擅长将历史建筑以方块形式高度还原，代表作品《明清风格明堂》展现了其对古建筑形制的深刻理解与精湛技艺。', avatar: 'fa-solid fa-user', color: '#f59e0b', image: 'images/hs.webp' },
         { name: '残缺', role: '皮肤作者 / 常稿画师', desc: '残缺(雨中观花)是一位才华横溢的皮肤画师，她擅长多种风格的MC皮肤贴图绘制。作为团队的常稿画师，受到广泛好评。', avatar: 'fa-solid fa-clipboard-check', color: '#84cc16', image: 'images/cq.webp' },
         { name: '甜妤', role: '皮肤作者', desc: '甜妤的皮肤以精致而被人熟知，她风格多样，发布的作品多个都收获了10w及以上的下载量，得到了广大玩家的喜爱。', avatar: 'fa-solid fa-user', color: '#f43f5e', image: 'images/ty.webp' },
         { name: 'by_E', role: '皮肤作者 / 常稿画师', desc: 'by_E擅长绘制二次元同人皮肤，他专注于将动漫、漫画中的角色高度还原至MC世界，笔触细腻风格鲜明。', avatar: 'fa-solid fa-user', color: '#8b5cf6', image: 'images/by.webp' },
         { name: 'a_12', role: '社群运营', desc: 'a_12负责团队社群日常运营与玩家互动，活跃于QQ群、频道等多个社群渠道，热忱解答玩家疑问，维护社群氛围，是团队与玩家之间的重要桥梁。', avatar: 'fa-solid fa-user', color: '#06b6d4', image: 'images/a12.webp' },
         { name: '苦芒', role: '前社团开平运营', desc: '苦芒是前社团开平运营。', avatar: 'fa-solid fa-user', color: '#f59e0b', image: 'images/km.webp' },
         { name: 'kino', role: 'Addon作者 / 建模师', desc: 'kino_noikce是一位优秀的建模师，他擅长将头脑中的创意转变为实际，尤其擅长创作汽车模型和科幻风格配件的3D设计，代表作品《复古科幻载具包》深受玩家喜爱。', avatar: 'fa-solid fa-user', color: '#8b5cf6', image: 'images/kn.webp' },
-        { name: '陌笙', role: '皮肤作者 / 常稿画师', desc: '陌笙是一位优秀的皮肤创作者，擅长休闲简约风格的皮肤绘制与配色，作品清新自然、广受好评。陌笙的个人开发者：哲是个工作室。', avatar: 'fa-solid fa-user', color: '#f43f5e', image: 'images/ms.webp' },
-        { name: '亨升', role: '建筑作者 / 古建筑设计师', desc: '亨升精通明清古建筑风格设计与建造，擅长将历史建筑以方块形式高度还原，代表作品《明清风格明堂》展现了其对古建筑形制的深刻理解与精湛技艺。', avatar: 'fa-solid fa-user', color: '#f59e0b', image: 'images/hs.webp' }
+        { name: '陌笙', role: '皮肤作者 / 常稿画师', desc: '陌笙是一位优秀的皮肤创作者，擅长休闲简约风格的皮肤绘制与配色，作品清新自然、广受好评。陌笙的个人开发者：哲是个工作室。', avatar: 'fa-solid fa-user', color: '#f43f5e', image: 'images/ms.webp' }
     ];
 
     var SHOP_ITEMS = [
