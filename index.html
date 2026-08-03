@@ -1,6 +1,12 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
 <head>
+    <script>
+        // 强制 HTTPS 跳转 —— 兜底微信/QQ/抖音等不识别 HSTS 的内置浏览器
+        if (location.protocol === 'http:' && location.hostname !== 'localhost') {
+            location.replace('https://' + location.host + location.pathname + location.search + location.hash);
+        }
+    </script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover, maximum-scale=1.0, user-scalable=no">
     <meta name="format-detection" content="telephone=no, email=no, address=no">
