@@ -12,7 +12,9 @@
         desc: 'Minecraft 综合型开发团队',
         qq: {
             chat: '914029611',
+            chatUrl: 'https://qm.qq.com/q/22asfFbLhC',
             join1: '2176179242',
+            join1Url: 'https://qm.qq.com/q/pcNCh1Bj2M',
             join2: '83345672'
         }
     };
@@ -32,7 +34,8 @@
             { id: 'datongyungangjichang', title: '大同云冈机场', subtitle: 'Datong Yungang Airport', category: '现代建筑 · 云筑设计团队', desc: '本地图参考现实原型山西省大同市云冈国际机场（Datong Yungang International Airport，IATA：DAT，ICAO：ZBDT），为4C级国际支线机场。', tags: ['#云筑设计团队', '#现代', '#交通'], icon: 'fa-plane', image: 'images/datongyungangjichang.webp', author: 'HOYSH、小熊熊' },
             { id: 'reserved-building-1', title: '长安唐大明宫', subtitle: 'Daming Palace', category: '古建筑组 · 尚国营建', desc: '完整还原长安唐代大明宫，大明宫，大唐帝国的大朝正宫，唐朝的政治中心和国家象征，位于唐京师长安（今西安）北侧的龙首原，是唐长安城三座主要宫殿“三大内”（大明宫、太极宫、兴庆宫）中规模最大的一座。', tags: ['#尚国营建', '#宫殿', '#唐宋'], icon: 'fa-hammer', image: 'images/daminggong.webp', author: '浔昇' },
             { id: 'reserved-building-2', title: '兰茶市6 · 古韵银江', subtitle: 'LACH City 6', category: '现代城市 · SHV团队', desc: '兰茶市是基于架空城市的基础上创作的一个拥有烟火气的小城，拥有丰富的地铁的线路、场景与彩蛋，近年来逐步更新，得到了很多MC中国版玩家的喜爱。', tags: ['#现代都市', '#架空', '#SHV团队'], icon: 'fa-city', image: 'images/lach.webp', author: 'SHV寻林' },
-            { id: 'reserved-building-3', title: '明清风格明堂', subtitle: 'Ming and Qing style Mingtang', category: '古建筑组 · 明清建筑', desc: '原型参考武则天时期洛阳城核心建筑万象神宫（明堂），保留”上圆下方、三重通天”的核心形制，经体量缩放与明清风格化重构，用方块还原了一座兼具唐代格局与明清细节的中式建筑大观。', tags: ['#古建筑', '#明清', '#明堂'], icon: 'fa-hammer', image: 'images/mingtang.webp', isReserved: false, author: '亨升' }
+            { id: 'reserved-building-3', title: '明清风格明堂', subtitle: 'Ming and Qing style Mingtang', category: '古建筑组 · 明清建筑', desc: '原型参考武则天时期洛阳城核心建筑万象神宫（明堂），保留”上圆下方、三重通天”的核心形制，经体量缩放与明清风格化重构，用方块还原了一座兼具唐代格局与明清细节的中式建筑大观。', tags: ['#古建筑', '#明清', '#明堂'], icon: 'fa-hammer', image: 'images/mingtang.webp', isReserved: false, author: '亨升' },
+            { id: 'reserved-building-4', title: '希伦市', subtitle: 'Hilom City', category: '现代城市 · 云筑设计团队', desc: '希伦市是一座以现代都市为蓝本打造的架空城市，融合商业中心、交通枢纽与滨水景观，细节丰富布局考究，是云筑设计团队的又一力作。', tags: ['#现代都市', '#架空', '#云筑设计'], icon: 'fa-city', image: 'images/xls.webp', author: 'HOYSH' }
         ],
         maps: [
             { id: 'reserved-map-1', title: '杀戮迷宫', subtitle: 'Killing Labyrinth', category: '玩法地图 · 多人竞技', desc: '石砖构筑的巨大迷宫纵横交错，曲折通道暗藏杀机。踏入这片迷域，前路难辨方向，敌人潜伏拐角，唯有奋力厮杀，寻得出路方能存活。', tags: ['#多人对战', '#单人竞技', '#联机玩法'], icon: 'fa-map', image: 'images/slmg.webp', author: '挽留' },
@@ -44,8 +47,8 @@
         addons: [
             { id: 'binfentangzixingche', title: '缤纷糖自行车', subtitle: 'Candy Bike Addon', category: 'Addon · 载具', desc: '糖果主题自行车载具，缤纷色彩搭配多种皮肤，拥有完整的骑行动画和机制，让你的MC世界充满甜蜜与活力。', layout: 'wide', tags: ['#载具', '#Addon', '#可爱'], icon: 'fa-bicycle', image: 'images/binfentangzixingche.webp', author: '元谋YUMI' },
             { id: 'fugukehuanzaijubao', title: '复古科幻载具包', subtitle: 'Retro Sci-Fi Vehicles', category: 'Addon · 载具包', desc: '资源包包含3辆核动力驱动的科幻载具，造型设计起源于50年代，代表人们对未来的向往和幻想。部分车辆有背景音乐，车子有两百点血量。', layout: 'wide', tags: ['#载具', '#科幻', '#Addon'], icon: 'fa-rocket', image: 'images/fugukehuanzaijubao.webp', author: 'Kino' },
-            { id: 'paopaochuan', title: '泡泡船', subtitle: 'Bubble Boat', category: 'Addon · 载具', desc: '以动漫海绵宝宝为创意打造的可爱海洋主题小船，可在水面自由航行，产生泡泡粒子效果，冒险必备萌系载具。', layout: 'square', tags: ['#载具', '#Addon', '#海洋'], icon: 'fa-ship', image: 'images/paopaochuan.webp', author: '元谋YUMI' },
-            { id: 'yuanbanshengwuqicheng', title: '更好的原版生物可骑乘', subtitle: 'Original version of creature mountable', category: 'Addon · 生物增强', desc: '原版全部生物新增驯化骑乘属性，骑乘任意你喜欢的生物遨游世界，甚至在夜幕降临时骑乘幻翼遨游天空，部分生物还有物品栏属性哦！', layout: 'square', tags: ['#生物', '#生存', '#Addon'], icon: 'fa-dragon', image: 'images/yuanbanshengwuqicheng.webp', author: '元谋YUMI' },
+            { id: 'paopaochuan', title: '泡泡船', subtitle: 'Bubble Boat', category: 'Addon · 载具', desc: '以动漫海绵宝宝为创意打造的可爱海洋主题小船，可在水面自由航行，产生泡泡粒子效果，冒险必备萌系载具。', layout: 'wide', tags: ['#载具', '#Addon', '#海洋'], icon: 'fa-ship', image: 'images/paopaochuan.webp', author: '元谋YUMI' },
+            { id: 'yuanbanshengwuqicheng', title: '更好的原版生物可骑乘', subtitle: 'Original version of creature mountable', category: 'Addon · 生物增强', desc: '原版全部生物新增驯化骑乘属性，骑乘任意你喜欢的生物遨游世界，甚至在夜幕降临时骑乘幻翼遨游天空，部分生物还有物品栏属性哦！', layout: 'wide', tags: ['#生物', '#生存', '#Addon'], icon: 'fa-dragon', image: 'images/yuanbanshengwuqicheng.webp', author: '元谋YUMI' },
             { id: 'reserved-addon-1', title: '中式家具 · 正式版', subtitle: 'Chinese Style Furniture', category: 'Addon · 家具', desc: '模组新增十余款精致中式古风家具，包含桌椅、屏风、灯笼、花窗等摆件，打造古韵内饰，轻松搭建国风宅院。', layout: 'wide', tags: ['#中式', '#家具', '#装饰'], icon: 'fa-gears', image: 'images/zsjj.webp', author: '浔昇' },
             { id: 'reserved-addon-2', title: '唱片型音乐播放器- 路灯原创音乐包', subtitle: 'Ludeng Original Music Pack', category: 'Addon · 唱片音乐包', desc: 'SFL与R.A.D Music Club联手推出的唱片音乐模组，新增8首原创曲目，30格内可立体听音，音频均拥有完整版权，生存模式即可制作播放器，拥有独立歌词本可对照。', layout: 'wide', tags: ['#原创', '#音乐', '#播放器'], icon: 'fa-gears', image: 'images/ld.webp', author: 'A_路灯、元谋YUMI' },
             { id: 'reserved-addon-3', title: '元宵花灯', subtitle: 'Yuanxiao Lantern', category: 'Addon · 装饰', desc: '新增数十款款国风元宵花灯！梅兰竹菊、牡丹纹样一应俱全。精致立体模型，流苏飘逸，装点古风庭院、古镇街巷，灯火盈盈，为你的世界增添浓浓中式佳节氛围。', layout: 'wide', tags: ['#中式', '#装饰', '#摆件'], icon: 'fa-gears', image: 'images/huadeng.webp', author: '浔昇' },
@@ -73,16 +76,16 @@
         { name: '我的世界中国版', type: '游戏平台', url: 'https://mc.163.com/pe/startup/?id=netease&param=%7B%22from%22%3A%20%22profileTeam%22%2C%20%22id%22%3A%20%221627555615%22%7D', icon: 'fa-solid fa-cube', color: '#00d4ff' },
         { name: '爱发电', type: '创作者平台', url: 'https://www.ifdian.net/a/xunsheng208322', icon: 'fa-solid fa-heart', color: '#f59e0b' },
         { name: 'B站 / 哔哩哔哩', type: '视频平台', url: 'https://b23.tv/EbGndlr', icon: 'fa-brands fa-bilibili', color: '#fb7299' },
-        { name: '抖音', type: '短视频', url: ' https://v.douyin.com/fShFwLzAsEg', icon: 'fa-brands fa-tiktok', color: '#111111' },
+        { name: '抖音', type: '短视频', url: 'https://v.douyin.com/fShFwLzAsEg', icon: 'fa-brands fa-tiktok', color: '#111111' },
         { name: 'QQ社群', type: '社群平台', url: 'https://qm.qq.com/q/l5Tb5HeLss', icon: 'fa-brands fa-qq', color: '#12b7f5' },
         { name: '小红书', type: '社交平台', url: 'https://xhslink.cn/m/AP2A6xnfUQW', icon: 'fa-solid fa-book-open', color: '#ff2442' },
     ];
 
     var MEMBERS = [
-        { name: '元谋YUMI', role: '团队负责人 / 运营 / Addon作者 / 地图指令 / 画师 / 策划 / 编辑 ', desc: '团队负责人，负责策略规划与资源对接，是MC中国版多款热门模组的开发者，部分免费模组的下载量超过100w，同时是音乐人和vocaloid领域的创作者。', avatar: 'fa-solid fa-crown', color: '#f59e0b', image: 'images/ym.webp', links: [{ name: 'B站', icon: 'fa-brands fa-bilibili', url: 'https://b23.tv/tK9lhP5', class: 'bilibili' }, { name: '抖音', icon: 'fa-brands fa-tiktok', url: '#', class: 'douyin' }] },
+        { name: '元谋YUMI', role: '团队负责人 / 运营 / Addon作者 / 地图指令 / 画师 / 策划 / 编辑', desc: '团队负责人，负责策略规划与资源对接，是MC中国版多款热门模组的开发者，部分免费模组的下载量超过100w，同时是音乐人和vocaloid领域的创作者。', avatar: 'fa-solid fa-crown', color: '#f59e0b', image: 'images/ym.webp', links: [{ name: 'B站', icon: 'fa-brands fa-bilibili', url: 'https://b23.tv/tK9lhP5', class: 'bilibili' }, { name: '抖音', icon: 'fa-brands fa-tiktok', url: '#', class: 'douyin' }] },
         { name: '浔昇-SFL🐟', role: '团队负责人 / 尚国营建负责人 / 建筑作者 / Addon作者 / 画师 / 策划', desc: '浔昇是团队负责人及团队古建筑设计总监，擅长唐、宋、明、清的多体制和风格古建筑建造，还是才华横溢的贴图画师，代表作品众多。', avatar: 'fa-solid fa-chess-rook', color: '#8b5cf6', image: 'images/xs.webp', links: [{ name: 'B站', icon: 'fa-brands fa-bilibili', url: '#', class: 'bilibili' }, { name: '抖音', icon: 'fa-brands fa-tiktok', url: '#', class: 'douyin' }] },
         { name: '浩歌', role: 'HG Studio 负责人 / 建筑作者', desc: '浩歌是现代建筑设计总监，擅长科幻都市风格的建筑大观创作，浩歌的个人开发者账号：HG2025。', avatar: 'fa-solid fa-city', color: '#0ea5e9', image: 'images/hg.webp' },
-        { name: '翎汐RingShi', role: 'SFL首席筑梦师 / 社群运营 / 自媒体运营', desc: '“笑裁青丝绣彩霓，怀拥妙笔字珠玑。自生芳华化翎羽，长守清心待春汐。。” \n翎汐是SFL社团原创虚拟形象，生日6月8日，作为团队首席筑梦师，总会在大家没有灵感的时候出面解决问题；同时作为虚拟形象对外展示社团风采。', avatar: 'fa-solid fa-palette', color: '#ec4899', image: 'images/lx.webp' },
+        { name: '翎汐RingShi', role: 'SFL首席筑梦师 / 社群运营 / 自媒体运营', desc: '“笑裁青丝绣彩霓，怀拥妙笔字珠玑。自生芳华化翎羽，长守清心待春汐。” \n翎汐是SFL社团原创虚拟形象，生日6月8日，作为团队首席筑梦师，总会在大家没有灵感的时候出面解决问题；同时作为虚拟形象对外展示社团风采。', avatar: 'fa-solid fa-palette', color: '#ec4899', image: 'images/lx.webp' },
         { name: '元初', role: '社群运营 / 皮肤画师', desc: '元初不但擅长MC皮肤绘制，还擅长指绘，他的风格多样，在多个平台都得到了很多人的喜爱。同时元初和元谋一起完成了多个音mad鬼畜企划，负责视频剪辑工作。', avatar: 'fa-solid fa-microchip', color: '#10b981', image: 'images/yc.webp' },
         { name: '空空', role: '建筑作者 / 玩法地图作者 / 建筑策划', desc: '空空擅长现代风、中世纪风的建筑创作，参与了团队组织多个地图立项的活动。', avatar: 'fa-solid fa-paint-brush', color: '#ef4444', image: 'images/kk.webp' },
         { name: '挽留', role: '玩法地图作者 / 指令师', desc: '挽留精通玩法地图的策划与实现落地，打造了《杀戮迷宫》、《末日之后》等多个爆款地图，同时挽留还是经验丰富的指令师，对团队做出了不可磨灭的贡献。', avatar: 'fa-solid fa-user-tie', color: '#06b6d4', image: 'images/wl.webp' },
@@ -98,7 +101,7 @@
     var SHOP_ITEMS = [
         { title: '北京明紫禁城地图存档1.21及以上版本通用', category: '建筑存档', price: '¥45', original: '¥69.9', icon: 'fa-user-ninja', desc: '1:1还原北京明代紫禁城建筑群', tag: '热销', tagColor: '#ef4444', image: 'images/sp1.webp' },
         { title: '【像素拼豆】 MC物品全图鉴拼豆图纸', category: '图纸包', price: '¥17.99', original: '¥19.9', icon: 'fa-chess-rook', desc: '人工识色、原创手绘MC物品拼豆图纸包', tag: '限时', tagColor: '#f59e0b', image: 'images/sp2.webp' },
-        { title: '长安唐大明宫地图存档1.21及以上版本通用', category: '建筑存档', price: '¥89', original: '¥119.9', icon: 'fa-gears', desc: '', tag: '新品', tagColor: '#10b981', image: 'images/sp3.webp' },
+        { title: '长安唐大明宫地图存档1.21及以上版本通用', category: '建筑存档', price: '¥89', original: '¥119.9', icon: 'fa-gears', desc: '1:1还原唐代大明宫建筑群，气势恢宏的宫殿存档', tag: '新品', tagColor: '#10b981', image: 'images/sp3.webp' },
         { title: '明清风格明堂', category: '拼豆图纸', price: '¥9.9', original: '¥29.9', icon: 'fa-cubes', desc: '基于武则天时期洛阳城万象神宫（明堂）重构的明清风古建', tag: '超值', tagColor: '#8b5cf6', image: 'images/sp4.webp' },
         { title: 'Mard全系291色建筑方块拓展包', category: '新品Addon', price: '¥3.6', original: '¥6', icon: 'fa-tree', desc: '以Mard拼豆色谱为灵感1:1复刻，覆盖15大类291款纯色方块，弥补原版色彩空白；支持聊天栏输入色号一键取块、空格分隔批量调取，内置对照图纸与说明书，像素画、彩绘、造景全覆盖。', tag: '必备', tagColor: '#06b6d4', image: 'images/sp5.webp' },
         { title: '北宋皇家道观地图存档1.21及以上版本通用', category: '建筑存档', price: '¥35', original: '¥58', icon: 'fa-city', desc: '宋风皇家道观建筑群存档，庄重典雅的宗教建筑大观，适配生存与创造模式', tag: '推荐', tagColor: '#0ea5e9', image: 'images/sp6.webp' }
@@ -110,7 +113,7 @@
         { name: 'Realize a Dream Music Club', en: 'R.A.D Music Club', type: '创作联盟', desc: 'R.A.D. Music Club是一家立足于全球视野、面向未来的音乐团队，与极鱼社联手创作原创歌曲。', url: 'https://space.bilibili.com/105791477', color: '#ec4899', logo: 'fa-solid fa-palette', image: 'images/radlogo.webp' },
         { name: '云筑设计团队', en: 'Cloud Pavilion Work', type: '建筑团队', desc: '云筑设计团队由HOYSH创立，成立于2026年3月12日，主营现代式建筑，代表作：《天宗市》《希伦市》《像素大同系列》《像素深圳》', url: 'https://v.douyin.com/8_n7XMWClPc/', color: '#8b5cf6', logo: 'fa-solid fa-microchip', image: 'images/yzlogo.webp' },
         { name: '鸽予文化', en: 'Ge Yu Culture', type: '合作组织', desc: '上海鸽予文化有限公司，成立于2024年12月，主业为新媒体宣发及文化设计，与多名创作者展开合作，旗下鸽予工作室主营游戏《我的世界》相关物料制作。', url: '#', color: '#10b981', logo: 'fa-solid fa-cubes', image: 'images/gy.webp' },
-        { name: '123', en: '', type: '合作组织', desc: '123', url: '#', color: '#94a3b8', image: '' }
+        { name: '预留合作组织', en: 'Coming Soon', type: '合作组织', desc: '更多合作组织正在洽谈中，敬请期待...', url: '#', color: '#94a3b8', logo: 'fa-solid fa-handshake', image: '' }
     ];
 
     var FRIEND_LINKS = [
@@ -200,8 +203,8 @@
             '</ul></div>' +
             '      <div class="footer-services"><h4>业务范围</h4><ul>' + serviceLinks + '</ul></div>' +
             '      <div class="footer-contact"><h4>联系方式</h4>' +
-            '        <div class="contact-item"><i class="fa-solid fa-users"></i><div><span>交流群</span><a href="#" onclick="copyText(\'' + SITE.qq.chat + '\');return false;">' + SITE.qq.chat + '</a></div></div>' +
-            '        <div class="contact-item"><i class="fa-solid fa-user-plus"></i><div><span>负责人QQ</span><a href="#" onclick="copyText(\'' + SITE.qq.join1 + '\');return false;">' + SITE.qq.join1 + '</a></div></div>' +
+            '        <div class="contact-item"><i class="fa-solid fa-users"></i><div><span>交流群</span><a href="' + SITE.qq.chatUrl + '" target="_blank" rel="noopener">' + SITE.qq.chat + '</a></div></div>' +
+            '        <div class="contact-item"><i class="fa-solid fa-user-plus"></i><div><span>负责人QQ</span><a href="' + SITE.qq.join1Url + '" target="_blank" rel="noopener">' + SITE.qq.join1 + '</a></div></div>' +
             '        <div class="contact-item"><i class="fa-solid fa-user-plus"></i><div><span>负责人QQ</span><a href="#" onclick="copyText(\'' + SITE.qq.join2 + '\');return false;">' + SITE.qq.join2 + '</a></div></div>' +
             '      </div>' +
             '      <div class="footer-friendlinks"><h4>友情链接</h4><div class="friend-links">' + friendLinksHtml + '</div></div>' +
