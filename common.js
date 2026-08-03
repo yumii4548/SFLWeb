@@ -108,12 +108,13 @@
     ];
 
     var PARTNERS = [
-        { name: '上海熵联天创网络科技有限公司', en: 'Entropy Link Tianchuang', type: '合作组织', desc: '独立游戏开发团队，代表作品《邻家之钥》，是极鱼社战略合作伙伴。', url: 'https://tianentropy.cn/', color: '#f59e0b', logo: 'fa-solid fa-chess-rook', image: 'images/tpy.png' },
+        { name: '上海熵联天创网络科技有限公司', en: 'Entropy Link Tianchuang', type: '合作组织', desc: '熵联天创，游戏开发团队，成立于2025年6月18日，致力于制作有趣好玩的作品，营造良好的团队环境。代表作品《邻家之钥》。是极鱼社战略合作伙伴。', url: 'https://tianentropy.cn/', color: '#f59e0b', logo: 'fa-solid fa-chess-rook', image: 'images/tpy.png' },
         { name: '宙鱼文化工作室', en: 'Zhouyu Culture Studio', type: '合作组织', desc: '宙鱼网络工作室，成立于2020年6月，至今旗下三名直属开发者，两名合作开发者，总发表组件450+，专业与广告设计、新媒体运营、文创宣发等 咨询联系:CBUAD@qq.com。', url: 'https://space.bilibili.com/486126114', color: '#0ea5e9', logo: 'fa-solid fa-city', image: 'images/cnzy.webp' },
         { name: 'Realize a Dream Music Club', en: 'R.A.D Music Club', type: '创作联盟', desc: 'R.A.D. Music Club是一家立足于全球视野、面向未来的音乐团队，与极鱼社联手创作原创歌曲。', url: 'https://space.bilibili.com/105791477', color: '#ec4899', logo: 'fa-solid fa-palette', image: 'images/radlogo.webp' },
         { name: '云筑设计团队', en: 'Cloud Pavilion Work', type: '建筑团队', desc: '云筑设计团队由HOYSH创立，成立于2026年3月12日，主营现代式建筑，代表作：《天宗市》《希伦市》《像素大同系列》《像素深圳》', url: 'https://v.douyin.com/8_n7XMWClPc/', color: '#8b5cf6', logo: 'fa-solid fa-microchip', image: 'images/yzlogo.webp' },
         { name: '鸽予文化', en: 'Ge Yu Culture', type: '合作组织', desc: '上海鸽予文化有限公司，成立于2024年12月，主业为新媒体宣发及文化设计，与多名创作者展开合作，旗下鸽予工作室主营游戏《我的世界》相关物料制作。', url: '#', color: '#10b981', logo: 'fa-solid fa-cubes', image: 'images/gy.webp' },
-        { name: '宇创领航工作室', en: 'YuChuang Studio', type: '合作组织', desc: '宇创领航是《我的世界》中国版综合开发工作室，深耕网易版生态，主营模组、光影、城市还原地图创作。擅长轨道交通、都市建造模组，代表作有像素邯郸、轨道交通模组、校园组件，还自研多种应用和游戏，兼顾创作与新人培育，全网传播热度较高。', url: 'https://vhwork.cn/', color: '#94a3b8', logo: 'fa-solid fa-handshake', image: 'images/yclh.webp' }
+        { name: '宇创领航工作室', en: 'YuChuang Studio', type: '合作组织', desc: '宇创领航是《我的世界》中国版综合开发工作室，深耕网易版生态，主营模组、光影、城市还原地图创作。擅长轨道交通、都市建造模组，代表作有像素邯郸、轨道交通模组、校园组件，还自研多种应用和游戏，兼顾创作与新人培育，全网传播热度较高。', url: 'https://vhwork.cn/', color: '#94a3b8', logo: 'fa-solid fa-handshake', image: 'images/yclh.webp' },
+        { name: 'MewBaka笨猫工作室', en: 'MewBaka Studio', type: '合作组织', desc: '笨猫工作室成立于2024年7月，主要开发视觉小说游戏及衍生产品，正在制作一款专为视觉小说创作打造的现代游戏引擎——NarraLeaf Project。', url: '#', color: '#f97316', logo: 'fa-solid fa-cat', image: '' }
     ];
 
     var FRIEND_LINKS = [
