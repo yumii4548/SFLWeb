@@ -35,7 +35,7 @@
             { id: 'reserved-building-1', title: '长安唐大明宫', subtitle: 'Daming Palace', category: '古建筑组 · 尚国营建', desc: '完整还原长安唐代大明宫，大明宫，大唐帝国的大朝正宫，唐朝的政治中心和国家象征，位于唐京师长安（今西安）北侧的龙首原，是唐长安城三座主要宫殿“三大内”（大明宫、太极宫、兴庆宫）中规模最大的一座。', tags: ['#尚国营建', '#宫殿', '#唐宋'], icon: 'fa-hammer', image: 'images/daminggong.webp', author: '浔昇' },
             { id: 'reserved-building-2', title: '兰茶市6 · 古韵银江', subtitle: 'LACH City 6', category: '现代城市 · SHV团队', desc: '兰茶市是基于架空城市的基础上创作的一个拥有烟火气的小城，拥有丰富的地铁的线路、场景与彩蛋，近年来逐步更新，得到了很多MC中国版玩家的喜爱。', tags: ['#现代都市', '#架空', '#SHV团队'], icon: 'fa-city', image: 'images/lach.webp', author: 'SHV寻林' },
             { id: 'reserved-building-3', title: '明清风格明堂', subtitle: 'Ming and Qing style Mingtang', category: '古建筑组 · 明清建筑', desc: '原型参考武则天时期洛阳城核心建筑万象神宫（明堂），保留”上圆下方、三重通天”的核心形制，经体量缩放与明清风格化重构，用方块还原了一座兼具唐代格局与明清细节的中式建筑大观。', tags: ['#古建筑', '#明清', '#明堂'], icon: 'fa-hammer', image: 'images/mingtang.webp', isReserved: false, author: '亨升' },
-            { id: 'reserved-building-4', title: '希伦市', subtitle: 'Hilom City', category: '现代城市 · 云筑设计团队', desc: '希伦市是一座以现代都市为蓝本打造的架空城市，融合商业中心、交通枢纽与滨水景观，细节丰富布局考究，是云筑设计团队的又一力作。', tags: ['#现代都市', '#架空', '#云筑设计'], icon: 'fa-city', image: 'images/xls.webp', author: 'HOYSH' }
+            { id: 'reserved-building-4', title: '希伦市', subtitle: 'Hilom City', category: '现代城市 · 云筑设计团队', desc: '希伦市是一座历经四代迭新、以现代都市为蓝本打造的架空城市，融合商业中心、交通枢纽与滨水景观，细节丰富布局考究，是云筑设计团队的又一力作。', tags: ['#现代都市', '#架空', '#云筑设计'], icon: 'fa-city', image: 'images/xls.webp', author: 'HOYSH' }
         ],
         maps: [
             { id: 'reserved-map-1', title: '杀戮迷宫', subtitle: 'Killing Labyrinth', category: '玩法地图 · 多人竞技', desc: '石砖构筑的巨大迷宫纵横交错，曲折通道暗藏杀机。踏入这片迷域，前路难辨方向，敌人潜伏拐角，唯有奋力厮杀，寻得出路方能存活。', tags: ['#多人对战', '#单人竞技', '#联机玩法'], icon: 'fa-map', image: 'images/slmg.webp', author: '挽留' },
@@ -102,7 +102,7 @@
         { title: '北京明紫禁城地图存档1.21及以上版本通用', category: '建筑存档', price: '¥45', original: '¥69.9', icon: 'fa-user-ninja', desc: '1:1还原北京明代紫禁城建筑群', tag: '热销', tagColor: '#ef4444', image: 'images/sp1.webp' },
         { title: '【像素拼豆】 MC物品全图鉴拼豆图纸', category: '图纸包', price: '¥17.99', original: '¥19.9', icon: 'fa-chess-rook', desc: '人工识色、原创手绘MC物品拼豆图纸包', tag: '限时', tagColor: '#f59e0b', image: 'images/sp2.webp' },
         { title: '长安唐大明宫地图存档1.21及以上版本通用', category: '建筑存档', price: '¥89', original: '¥119.9', icon: 'fa-gears', desc: '1:1还原唐代大明宫建筑群，气势恢宏的宫殿存档', tag: '新品', tagColor: '#10b981', image: 'images/sp3.webp' },
-        { title: '明清风格明堂', category: '拼豆图纸', price: '¥9.9', original: '¥29.9', icon: 'fa-cubes', desc: '基于武则天时期洛阳城万象神宫（明堂）重构的明清风古建', tag: '超值', tagColor: '#8b5cf6', image: 'images/sp4.webp' },
+        { title: '明清风格明堂', category: '拼豆图纸', price: '¥13', original: '¥29.9', icon: 'fa-cubes', desc: '基于武则天时期洛阳城万象神宫（明堂）重构的明清风古建', tag: '超值', tagColor: '#8b5cf6', image: 'images/sp4.webp' },
         { title: 'Mard全系291色建筑方块拓展包', category: '新品Addon', price: '¥3.6', original: '¥6', icon: 'fa-tree', desc: '以Mard拼豆色谱为灵感1:1复刻，覆盖15大类291款纯色方块，弥补原版色彩空白；支持聊天栏输入色号一键取块、空格分隔批量调取，内置对照图纸与说明书，像素画、彩绘、造景全覆盖。', tag: '必备', tagColor: '#06b6d4', image: 'images/sp5.webp' },
         { title: '北宋皇家道观地图存档1.21及以上版本通用', category: '建筑存档', price: '¥35', original: '¥58', icon: 'fa-city', desc: '宋风皇家道观建筑群存档，庄重典雅的宗教建筑大观，适配生存与创造模式', tag: '推荐', tagColor: '#0ea5e9', image: 'images/sp6.webp' }
     ];
@@ -113,7 +113,7 @@
         { name: 'Realize a Dream Music Club', en: 'R.A.D Music Club', type: '创作联盟', desc: 'R.A.D. Music Club是一家立足于全球视野、面向未来的音乐团队，与极鱼社联手创作原创歌曲。', url: 'https://space.bilibili.com/105791477', color: '#ec4899', logo: 'fa-solid fa-palette', image: 'images/radlogo.webp' },
         { name: '云筑设计团队', en: 'Cloud Pavilion Work', type: '建筑团队', desc: '云筑设计团队由HOYSH创立，成立于2026年3月12日，主营现代式建筑，代表作：《天宗市》《希伦市》《像素大同系列》《像素深圳》', url: 'https://v.douyin.com/8_n7XMWClPc/', color: '#8b5cf6', logo: 'fa-solid fa-microchip', image: 'images/yzlogo.webp' },
         { name: '鸽予文化', en: 'Ge Yu Culture', type: '合作组织', desc: '上海鸽予文化有限公司，成立于2024年12月，主业为新媒体宣发及文化设计，与多名创作者展开合作，旗下鸽予工作室主营游戏《我的世界》相关物料制作。', url: '#', color: '#10b981', logo: 'fa-solid fa-cubes', image: 'images/gy.webp' },
-        { name: '预留合作组织', en: 'Coming Soon', type: '合作组织', desc: '更多合作组织正在洽谈中，敬请期待...', url: '#', color: '#94a3b8', logo: 'fa-solid fa-handshake', image: '' }
+        { name: '宇创领航工作室', en: 'YuChuang Studio', type: '合作组织', desc: '宇创领航是《我的世界》中国版综合开发工作室，深耕网易版生态，主营模组、光影、城市还原地图创作。擅长轨道交通、都市建造模组，代表作有像素邯郸、轨道交通模组、校园组件，还自研多种应用和游戏，兼顾创作与新人培育，全网传播热度较高。', url: 'https://vhwork.cn/', color: '#94a3b8', logo: 'fa-solid fa-handshake', image: 'images/yclh.webp' }
     ];
 
     var FRIEND_LINKS = [
@@ -122,7 +122,7 @@
         { name: 'R.A.D Music Club', url: 'https://space.bilibili.com/105791477', desc: '全球视野音乐团队', icon: 'fa-solid fa-music', color: '#ec4899' },
         { name: '云筑设计团队', url: 'https://v.douyin.com/8_n7XMWClPc/', desc: '现代式建筑团队', icon: 'fa-solid fa-building', color: '#8b5cf6' },
         { name: '鸽予文化', url: '#', desc: '新媒体宣发及文化设计', icon: 'fa-solid fa-feather', color: '#10b981' },
-        { name: '预留链接', url: '#', desc: '', icon: 'fa-solid fa-link', color: '#94a3b8' },
+        { name: '宇创领航工作室', url: 'https://vhwork.cn/', desc: 'MC中国版综合开发工作室', icon: 'fa-solid fa-link', color: '#94a3b8' },
         { name: '预留链接', url: '#', desc: '', icon: 'fa-solid fa-link', color: '#94a3b8' },
         { name: '预留链接', url: '#', desc: '', icon: 'fa-solid fa-link', color: '#94a3b8' }
     ];
