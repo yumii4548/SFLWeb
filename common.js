@@ -8,7 +8,7 @@
     // ===== 网站数据配置 =====
     var SITE = {
         name: '极鱼社',
-        en: 'Swift Fish Lab',
+        en: 'SwiftFishLab',
         desc: 'Minecraft 综合型开发团队',
         qq: {
             chat: '914029611',
@@ -18,100 +18,110 @@
     };
 
     var SERVICES = [
-        { id: 'skinsubmit', icon: '📤', name: '授权皮肤代投', subtitle: 'SKIN SUBMISSION SERVICE', desc: '提供授权皮肤代投服务，专业对接各大平台审核通道，高效稳定，让你的皮肤作品快速上架各平台。', features: ['平台授权代理', '审核通道对接', '快速批量上架', '全程跟踪反馈'], price: '面议', badge: 'NEW', color: '#ec4899', url: '' },
-        { id: 'skin', icon: '🎨', name: 'MC 皮肤定制', subtitle: 'SKIN CUSTOMIZATION', desc: '打造独一无二的角色皮肤，涵盖多种风格，从可爱萌系到硬核战斗，总有一款适合你。', features: ['角色皮肤设计', '材质贴图制作', '定制化修改', '批量生产'], price: '面议', badge: 'POPULAR', color: '#00d4ff' },
-        { id: 'build', icon: '🏛️', name: '建筑承包', subtitle: 'ARCHITECTURE CONTRACTING', desc: '精美像素建筑，涵盖古风建筑与现代都市，从单体景观到完整城市规划，专业团队施工。', features: ['古建筑群建造', '现代建筑设计', '大型地图规划', '服务器主城建设'], price: '面议', badge: 'HOT', color: '#7c3aed' },
-        { id: 'crossversion', icon: '🔄', name: '全版本存档互通', subtitle: 'CROSS-VERSION MIGRATION', desc: '专业的 Minecraft 存档转换服务，实现各版本间存档互通，让你的建筑跨越版本限制。', features: ['基岩版转Java版', 'Java版转基岩版', '版本升级降级', '数据完整性保障'], price: '面议', badge: 'NEW', color: '#f59e0b' },
-        { id: 'pixel', icon: '✨', name: '拼豆像素画图纸', subtitle: 'PIXEL ART BLUEPRINT', desc: '将任意图片转换为拼豆（Perler Beads）像素画图纸，支持多种尺寸和调色板，附带详细制作说明。', features: ['图片转像素图纸', '调色板优化', '多尺寸导出', '制作教程附带'], price: '¥10 起', badge: 'UNIQUE', color: '#10b981' }
+        { id: 'skinsubmit', icon: '📤', name: '授权原创皮肤代投', subtitle: 'SKIN SUBMISSION SERVICE', desc: '提供授权皮肤代投服务，应用自研快速渲染包装提审系统，专业对接MC开发者平台审核通道，高效稳定，让你的皮肤作品快速上架。', features: ['自研自动化工具', '账号矩阵排列', '快速上架', '全程跟踪反馈'], price: '免费', badge: 'NEW', color: '#ec4899', url: 'https://wj.qq.com/s2/14959219/elqb/' },
+        { id: 'skin', icon: '🎨', name: 'MC 皮肤定制', subtitle: 'SKIN CUSTOMIZATION', desc: '打造独一无二的皮肤，涵盖多种风格，从可爱萌系到硬核战斗，总有一款适合你，支持商用及买断，网易/基岩/Java版本通用。', features: ['皮肤设计', '贴图定制', '定制化修改', '版本通用'], price: '¥20 起', badge: 'POPULAR', color: '#00d4ff', url: 'https://wj.qq.com/s2/27389406/0744/' },
+        { id: 'build', icon: '🏛️', name: '建筑承包', subtitle: 'ARCHITECTURE CONTRACTING', desc: '精美像素建筑，涵盖古风建筑与现代都市，从单体景观到完整城市规划，专业团队施工建造。', features: ['古建筑群建造', '现代建筑设计', '大型地图规划', '服务器主城建设'], price: '面议', badge: 'HOT', color: '#7c3aed', url: 'https://qm.qq.com/q/jx37nUpcBy' },
+        { id: 'crossversion', icon: '🔄', name: '全版本存档互通', subtitle: 'CROSS-VERSION MIGRATION', desc: '专业的 Minecraft 存档转换服务，实现Java/中国版/基岩版各版本间存档互通，让你的建筑跨越版本限制。', features: ['基岩版转Java版', 'Java版转基岩版', '版本升级降级', '中国版存档导入导出'], price: '¥18 ', badge: 'HOT', color: '#f59e0b', url: 'https://docs.qq.com/doc/DVmhJQ3VLWWVzbHZH' },
+        { id: 'pixel', icon: '✨', name: '拼豆像素画图纸', subtitle: 'PIXEL ART BLUEPRINT', desc: '承接拼豆板52钉及以下尺寸图纸定制，可根据MC皮肤设计大头拼豆图纸，含双层差分及合成，附带详细制作说明。', features: ['像素拼豆图纸', '调色板优化', '皮肤设计拼豆图纸', '制作教程附带'], price: '¥10 起', badge: 'UNIQUE', color: '#10b981', url: 'https://qm.qq.com/q/jx37nUpcBy' },
+        { id: 'vocaloid', icon: '🎶', name: 'Vocaloid 音乐企划', subtitle: 'VOCALOID PROJECT', desc: 'Vocaloid 相关音乐创作企划，涵盖原创/同人填词创作与调音制作，用虚拟歌声演绎独特音乐故事。【需自带调音引擎】', features: ['原创填词创作', 'Vocaloid 调音', '同人曲改编', '原创音乐作词'], price: '面议', badge: 'UNIQUE', color: '#06b6d4', url: 'https://space.bilibili.com/1327449089' }
     ];
 
     var WORKS = {
         buildings: [
-            { id: 'beijingzijincheng', title: '北京明紫禁城', subtitle: 'the Forbidden City', category: '古建筑组 · 尚国营建', desc: '1:100比例还原北京明代紫禁城，包含奉天殿、谨身殿等主要建筑群，气势恢宏，工笔细腻，每一处斗拱飞檐都经精心考据。', tags: ['#尚国营建', '#宫殿', '#大型建筑'], icon: 'fa-chess-rook', image: 'images/beijingzijincheng.jpg', author: '' },
-            { id: 'datongyungangjichang', title: '大同云冈机场', subtitle: 'Datong Yungang Airport', category: '现代建筑 · HG Studio', desc: '大同意向机场建筑，现代主义设计风格，流线型航站楼+跑道系统，功能齐全，细节逼真，可直接用于服务器地图。', tags: ['#HG Studio', '#现代', '#交通建筑'], icon: 'fa-plane', image: 'images/datongyungangjichang.jpg', author: '' },
-            { id: 'reserved-building-1', title: '预留建筑作品 1', subtitle: 'Coming Soon', category: '即将上架', desc: '更多精彩建筑项目正在制作中，敬请期待...', tags: ['#敬请期待'], icon: 'fa-hammer', image: '', isReserved: true, author: '' },
-            { id: 'reserved-building-2', title: '预留建筑作品 2', subtitle: 'Coming Soon', category: '即将上架', desc: '更多精彩建筑项目正在制作中，敬请期待...', tags: ['#敬请期待'], icon: 'fa-hammer', image: '', isReserved: true, author: '' }
+            { id: 'beijingzijincheng', title: '北京明紫禁城', subtitle: 'the Forbidden City', category: '古建筑组 · 尚国营建', desc: '比例还原北京明代紫禁城，包含奉天殿、谨身殿等主要建筑群，气势恢宏，工笔细腻，每一处斗拱飞檐都经精心考据。', tags: ['#尚国营建', '#宫殿', '#大型建筑'], icon: 'fa-chess-rook', image: 'images/beijingzijincheng.webp', author: '浔昇' },
+            { id: 'datongyungangjichang', title: '大同云冈机场', subtitle: 'Datong Yungang Airport', category: '现代建筑 · 云筑设计团队', desc: '本地图参考现实原型山西省大同市云冈国际机场（Datong Yungang International Airport，IATA：DAT，ICAO：ZBDT），为4C级国际支线机场。', tags: ['#云筑设计团队', '#现代', '#交通'], icon: 'fa-plane', image: 'images/datongyungangjichang.webp', author: 'HOYSH、小熊熊' },
+            { id: 'reserved-building-1', title: '长安唐大明宫', subtitle: 'Daming Palace', category: '古建筑组 · 尚国营建', desc: '完整还原长安唐代大明宫，大明宫，大唐帝国的大朝正宫，唐朝的政治中心和国家象征，位于唐京师长安（今西安）北侧的龙首原，是唐长安城三座主要宫殿“三大内”（大明宫、太极宫、兴庆宫）中规模最大的一座。', tags: ['#尚国营建', '#宫殿', '#唐宋'], icon: 'fa-hammer', image: 'images/daminggong.webp', author: '浔昇' },
+            { id: 'reserved-building-2', title: '兰茶市6 · 古韵银江', subtitle: 'LACH City 6', category: '现代城市 · SHV团队', desc: '兰茶市是基于架空城市的基础上创作的一个拥有烟火气的小城，拥有丰富的地铁的线路、场景与彩蛋，近年来逐步更新，得到了很多MC中国版玩家的喜爱。', tags: ['#现代都市', '#架空', '#SHV团队'], icon: 'fa-city', image: 'images/lach.webp', author: 'SHV寻林' },
+            { id: 'reserved-building-3', title: '明清风格明堂', subtitle: 'Ming and Qing style Mingtang', category: '古建筑组 · 明清建筑', desc: '原型参考武则天时期洛阳城核心建筑万象神宫（明堂），保留”上圆下方、三重通天”的核心形制，经体量缩放与明清风格化重构，用方块还原了一座兼具唐代格局与明清细节的中式建筑大观。', tags: ['#古建筑', '#明清', '#明堂'], icon: 'fa-hammer', image: 'images/mingtang.webp', isReserved: false, author: '亨升' }
         ],
         maps: [
-            { id: 'reserved-map-1', title: '预留玩法地图 1', subtitle: 'Coming Soon', category: '即将上架', desc: '更多精彩玩法地图正在制作中，敬请期待...', tags: ['#敬请期待'], icon: 'fa-map', image: '', isReserved: true, author: '' },
-            { id: 'reserved-map-2', title: '预留玩法地图 2', subtitle: 'Coming Soon', category: '即将上架', desc: '更多精彩玩法地图正在制作中，敬请期待...', tags: ['#敬请期待'], icon: 'fa-map', image: '', isReserved: true, author: '' },
-            { id: 'reserved-map-3', title: '预留玩法地图 3', subtitle: 'Coming Soon', category: '即将上架', desc: '更多精彩玩法地图正在制作中，敬请期待...', tags: ['#敬请期待'], icon: 'fa-map', image: '', isReserved: true, author: '' },
-            { id: 'reserved-map-4', title: '预留玩法地图 4', subtitle: 'Coming Soon', category: '即将上架', desc: '更多精彩玩法地图正在制作中，敬请期待...', tags: ['#敬请期待'], icon: 'fa-map', image: '', isReserved: true, author: '' },
-            { id: 'reserved-map-5', title: '预留玩法地图 5', subtitle: 'Coming Soon', category: '即将上架', desc: '更多精彩玩法地图正在制作中，敬请期待...', tags: ['#敬请期待'], icon: 'fa-map', image: '', isReserved: true, author: '' },
-            { id: 'reserved-map-6', title: '预留玩法地图 6', subtitle: 'Coming Soon', category: '即将上架', desc: '更多精彩玩法地图正在制作中，敬请期待...', tags: ['#敬请期待'], icon: 'fa-map', image: '', isReserved: true, author: '' }
+            { id: 'reserved-map-1', title: '杀戮迷宫', subtitle: 'Killing Labyrinth', category: '玩法地图 · 多人竞技', desc: '石砖构筑的巨大迷宫纵横交错，曲折通道暗藏杀机。踏入这片迷域，前路难辨方向，敌人潜伏拐角，唯有奋力厮杀，寻得出路方能存活。', tags: ['#多人对战', '#单人竞技', '#联机玩法'], icon: 'fa-map', image: 'images/slmg.webp', author: '挽留' },
+            { id: 'reserved-map-2', title: '幻梦层层系列', subtitle: 'Layers of Illusion', category: '玩法地图 · 剧情解谜', desc: '聊无意义的生活，疲惫无力的身躯，阴冷晦暗的盛夏，幻梦层层的思维。在剧情里探寻"我"究竟是谁。', tags: ['#剧情', '#解密', '#闯关'], icon: 'fa-map', image: 'images/hmcc.webp', author: 'SFL 2023&2024地图立项组' },
+            { id: 'reserved-map-3', title: '末日之后', subtitle: 'After the Doomsday', category: '玩法地图 · 多人竞技', desc: '一款PVE类型的地图，内置指令抽奖系统，击败怪物可获得奖励；地图内隐藏奖励宝箱，定时刷新物资。', tags: ['#多人协作', '#PVE', '#冒险'], icon: 'fa-map', image: 'images/mrzh.webp', author: '挽留' },
+            { id: 'reserved-map-4', title: '多赛道冰船竞技', subtitle: 'Multi-track ice boat competition', category: '玩法地图 · 多人竞技', desc: '2023年新年企划--在我的世界Minecraft里冰与船的特性中展开联想性创作，拥有美观的建筑以及有两个赛道，一个较易另一个较难，可以在第一个赛道中熟练之后再挑战更难的，突破自己。', tags: ['#竞技', '#冰船', '#新年'], icon: 'fa-map', image: 'images/bcjj.webp', author: '空空' },
+            { id: 'reserved-map-5', title: '2026 · SFL春节联欢晚会现场', subtitle: '2026 · SFL Spring Festival Square', category: '玩法地图 · 活动会场', desc: '该地图为2026年极鱼社 · 尚国营建 · HG Studio 元旦、除夕两届联欢晚会的活动现场，内设主殿大厅、花田、山地建筑群等多处场景，二十余人在此展开了别开生面的线上晚会活动。地图目前公开于网易MC资源大厅供玩家游览。', tags: ['#晚会', '#活动', '#会场'], icon: 'fa-map', image: 'images/xn.webp', author: '浔昇、浩歌' }
         ],
         addons: [
-            { id: 'binfentangzixingche', title: '缤纷糖自行车', subtitle: 'Candy Bike Addon', category: 'Addon · 载具', desc: '糖果主题自行车载具，缤纷色彩搭配多种皮肤，骑行音效+粒子特效，让你的MC世界充满甜蜜与活力。', layout: 'wide', tags: ['#载具', '#Addon', '#可爱'], icon: 'fa-bicycle', image: 'images/binfentangzixingche.jpg', author: '' },
-            { id: 'fugukehuanzaijubao', title: '复古科幻载具包', subtitle: 'Retro Sci-Fi Vehicles', category: 'Addon · 载具包', desc: '复古科幻风格载具合集，包含飞行器、悬浮车、复古跑车等10+载具，蒸汽朋克与赛博朋克完美融合。', layout: 'wide', tags: ['#载具包', '#科幻', '#Addon'], icon: 'fa-rocket', image: 'images/fugukehuanzaijubao.jpg', author: '' },
-            { id: 'paopaochuan', title: '泡泡船', subtitle: 'Bubble Boat', category: 'Addon · 载具', desc: '可爱的泡泡主题小船，可在水面自由航行，产生泡泡粒子效果，冒险必备萌系载具。', layout: 'square', tags: ['#载具', '#Addon', '#海洋'], icon: 'fa-ship', image: 'images/paopaochuan.jpg', author: '' },
-            { id: 'yuanbanshengwuqicheng', title: '原版生物启程', subtitle: 'Vanilla Mobs Enhanced', category: 'Addon · 生物增强', desc: '原版生物全方位增强，新增AI行为、进化形态、驯服机制、骑乘功能，让生存冒险更具挑战和乐趣。', layout: 'square', tags: ['#生物', '#生存', '#Addon'], icon: 'fa-dragon', image: 'images/yuanbanshengwuqicheng.jpg', author: '' },
-            { id: 'reserved-addon-1', title: '预留 Addon', subtitle: 'Coming Soon', category: '即将上架', desc: '更多精彩Addon正在开发中，敬请期待...', layout: 'square', tags: ['#敬请期待'], icon: 'fa-gears', image: '', isReserved: true, author: '' },
-            { id: 'reserved-addon-2', title: '预留 Addon', subtitle: 'Coming Soon', category: '即将上架', desc: '更多精彩Addon正在开发中，敬请期待...', layout: 'square', tags: ['#敬请期待'], icon: 'fa-gears', image: '', isReserved: true, author: '' },
-            { id: 'reserved-addon-3', title: '预留 Addon', subtitle: 'Coming Soon', category: '即将上架', desc: '更多精彩Addon正在开发中，敬请期待...', layout: 'square', tags: ['#敬请期待'], icon: 'fa-gears', image: '', isReserved: true, author: '' },
-            { id: 'reserved-addon-4', title: '预留 Addon', subtitle: 'Coming Soon', category: '即将上架', desc: '更多精彩Addon正在开发中，敬请期待...', layout: 'square', tags: ['#敬请期待'], icon: 'fa-gears', image: '', isReserved: true, author: '' },
-            { id: 'reserved-addon-5', title: '预留 Addon', subtitle: 'Coming Soon', category: '即将上架', desc: '更多精彩Addon正在开发中，敬请期待...', layout: 'square', tags: ['#敬请期待'], icon: 'fa-gears', image: '', isReserved: true, author: '' },
-            { id: 'reserved-addon-6', title: '预留 Addon', subtitle: 'Coming Soon', category: '即将上架', desc: '更多精彩Addon正在开发中，敬请期待...', layout: 'square', tags: ['#敬请期待'], icon: 'fa-gears', image: '', isReserved: true, author: '' }
+            { id: 'binfentangzixingche', title: '缤纷糖自行车', subtitle: 'Candy Bike Addon', category: 'Addon · 载具', desc: '糖果主题自行车载具，缤纷色彩搭配多种皮肤，拥有完整的骑行动画和机制，让你的MC世界充满甜蜜与活力。', layout: 'wide', tags: ['#载具', '#Addon', '#可爱'], icon: 'fa-bicycle', image: 'images/binfentangzixingche.webp', author: '元谋YUMI' },
+            { id: 'fugukehuanzaijubao', title: '复古科幻载具包', subtitle: 'Retro Sci-Fi Vehicles', category: 'Addon · 载具包', desc: '资源包包含3辆核动力驱动的科幻载具，造型设计起源于50年代，代表人们对未来的向往和幻想。部分车辆有背景音乐，车子有两百点血量。', layout: 'wide', tags: ['#载具', '#科幻', '#Addon'], icon: 'fa-rocket', image: 'images/fugukehuanzaijubao.webp', author: 'Kino' },
+            { id: 'paopaochuan', title: '泡泡船', subtitle: 'Bubble Boat', category: 'Addon · 载具', desc: '以动漫海绵宝宝为创意打造的可爱海洋主题小船，可在水面自由航行，产生泡泡粒子效果，冒险必备萌系载具。', layout: 'square', tags: ['#载具', '#Addon', '#海洋'], icon: 'fa-ship', image: 'images/paopaochuan.webp', author: '元谋YUMI' },
+            { id: 'yuanbanshengwuqicheng', title: '更好的原版生物可骑乘', subtitle: 'Original version of creature mountable', category: 'Addon · 生物增强', desc: '原版全部生物新增驯化骑乘属性，骑乘任意你喜欢的生物遨游世界，甚至在夜幕降临时骑乘幻翼遨游天空，部分生物还有物品栏属性哦！', layout: 'square', tags: ['#生物', '#生存', '#Addon'], icon: 'fa-dragon', image: 'images/yuanbanshengwuqicheng.webp', author: '元谋YUMI' },
+            { id: 'reserved-addon-1', title: '中式家具 · 正式版', subtitle: 'Chinese Style Furniture', category: 'Addon · 家具', desc: '模组新增十余款精致中式古风家具，包含桌椅、屏风、灯笼、花窗等摆件，打造古韵内饰，轻松搭建国风宅院。', layout: 'wide', tags: ['#中式', '#家具', '#装饰'], icon: 'fa-gears', image: 'images/zsjj.webp', author: '浔昇' },
+            { id: 'reserved-addon-2', title: '唱片型音乐播放器- 路灯原创音乐包', subtitle: 'Ludeng Original Music Pack', category: 'Addon · 唱片音乐包', desc: 'SFL与R.A.D Music Club联手推出的唱片音乐模组，新增8首原创曲目，30格内可立体听音，音频均拥有完整版权，生存模式即可制作播放器，拥有独立歌词本可对照。', layout: 'wide', tags: ['#原创', '#音乐', '#播放器'], icon: 'fa-gears', image: 'images/ld.webp', author: 'A_路灯、元谋YUMI' },
+            { id: 'reserved-addon-3', title: '元宵花灯', subtitle: 'Yuanxiao Lantern', category: 'Addon · 装饰', desc: '新增数十款款国风元宵花灯！梅兰竹菊、牡丹纹样一应俱全。精致立体模型，流苏飘逸，装点古风庭院、古镇街巷，灯火盈盈，为你的世界增添浓浓中式佳节氛围。', layout: 'wide', tags: ['#中式', '#装饰', '#摆件'], icon: 'fa-gears', image: 'images/huadeng.webp', author: '浔昇' },
+            { id: 'reserved-addon-4', title: '【像素拼豆】Mard全系291色建筑方块拓展包', subtitle: ' Mard Full Series 291-Color Building Block Expansion Pack', category: 'Addon · 建筑拓展', desc: '以 Mard 拼豆全套 291 色标准色谱为灵感 1:1 复刻，新增 15 大类色号合计 291 款纯色方块，彻底填补原版色彩空白；支持聊天栏输入色号一键获取、批量多重取件，内附说明书与图纸，适配像素画、彩绘、造景等全部建造场景。', layout: 'wide', tags: ['#像素', '#拼豆', '#内置内容'], icon: 'fa-gears', image: 'images/pd.webp', author: '元谋YUMI' },
+            { id: 'reserved-addon-5', title: '灯火璀璨 - 元宵', subtitle: 'Bright Lights - Yuanxiao', category: 'Addon · 装饰', desc: '极鱼社2025元宵主题组件！多款复古传统花灯各具特色，匠心还原中式古灯造型。悬于长街楼阁，星火点点，在方块世界重现上元灯会的繁华盛景。', layout: 'wide', tags: ['#节日', '#元宵', '#拓展'], icon: 'fa-gears', image: 'images/dhcc.webp', author: '浔昇、元谋YUMI' },
+            { id: 'reserved-addon-6', title: '更多精细人模盔甲架', subtitle: 'More detailed human model armor stands', category: 'Addon · 角色', desc: '升级优化盔甲架模型，拥有生动人形外观。自由摆放姿态，陈列武器、套装，用于展厅布景、商铺装饰，打造精致方块场景。', layout: 'square', tags: ['#角色', '#美化', '#真实'], icon: 'fa-gears', image: 'images/kjj.webp', author: 'SFL皮肤组、元谋YUMI' }
         ],
         skins: [
-            { id: 'skin-1', title: '仙侠主题系列', author: '极鱼社·皮肤组', category: '仙侠风', desc: '中国风仙侠角色皮肤，12款精美设计', image: 'images/skin-1.jpg' },
-            { id: 'skin-2', title: '校园青春系列', author: '极鱼社·皮肤组', category: '日常风', desc: '青春校园主题角色皮肤，8款设计', image: 'images/skin-2.jpg' },
-            { id: 'skin-3', title: '赛博朋克系列', author: '极鱼社·皮肤组', category: '科幻风', desc: '未来科幻赛博朋克角色皮肤，10款设计', image: 'images/skin-3.jpg' },
-            { id: 'skin-4', title: '萌系可爱系列', author: '极鱼社·皮肤组', category: '萌系风', desc: '软萌可爱角色皮肤合集，15款设计', image: 'images/skin-4.png' },
-            { id: 'skin-5', title: '硬核战斗系列', author: '极鱼社·皮肤组', category: '战斗风', desc: '硬核冒险战斗主题皮肤，6款设计', image: 'images/skin-5.jpg' },
-            { id: 'skin-6', title: '节日限定系列', author: '极鱼社·皮肤组', category: '限定款', desc: '春节/圣诞/中秋等节日皮肤，20款+', image: 'images/skin-6.png' },
-            { id: 'skin-7', title: '暗黑哥特系列', author: '极鱼社·皮肤组', category: '暗黑风', desc: '暗黑哥特风格角色皮肤，哥特建筑与服饰融合，8款设计', image: 'images/skin-7.jpg' },
-            { id: 'skin-8', title: '蒸汽朋克系列', author: '极鱼社·皮肤组', category: '复古风', desc: '蒸汽朋克主题角色皮肤，机械与复古完美结合，10款设计', image: 'images/skin-8.jpg' },
-            { id: 'skin-9', title: '奇幻异兽系列', author: '极鱼社·皮肤组', category: '奇幻风', desc: '神话奇幻生物主题皮肤，龙族精灵等异世界角色，12款设计', image: 'images/skin-9.png' }
+            { id: 'skin-1', title: '海月生烟', author: '沐_玖儿', category: '日常风', image: 'images/skin-1.webp' },
+            { id: 'skin-2', title: '呆萌挽挽', author: '甜妤', category: '萌系风', image: 'images/skin-2.webp' },
+            { id: 'skin-3', title: '瑶台飞花', author: '元谋YUMI', category: '日常风', image: 'images/skin-3.webp' },
+            { id: 'skin-4', title: '叠彩玫心酱', author: '沐_玖儿', category: '萌系风', image: 'images/skin-4.webp' },
+            { id: 'skin-5', title: '雨中赏花', author: '残缺', category: '萌系风', image: 'images/skin-5.webp' },
+            { id: 'skin-6', title: '小沄子﹣男版', author: '小沄子', category: '限定款', image: 'images/skin-6.webp' },
+            { id: 'skin-7', title: '松饼枫糖浆', author: '甜妤', category: '可爱风', image: 'images/skin-7.webp' },
+            { id: 'skin-8', title: '苏里', author: 'by_E', category: '复古风', image: 'images/skin-8.webp' },
+            { id: 'skin-9', title: '雨息', author: '陌笙', category: '萌系风', image: 'images/skin-9.webp' },
+            { id: 'skin-10', title: '玲玲小姐姐', author: '元初', category: '搞怪风', image: 'images/skin-10.webp' },
+            { id: 'skin-11', title: '唐 - 仕女', author: '浔昇', category: '古风', image: 'images/skin-11.webp' },
+            { id: 'skin-12', title: '余晖', author: '残缺', category: '萌系风', image: 'images/skin-12.webp' }
         ]
     };
 
     var PLATFORMS = [
-        { name: '我的世界中国版', type: '游戏平台', url: '#', icon: 'fa-solid fa-cube', color: '#00d4ff' },
-        { name: '爱发电', type: '创作者平台', url: '#', icon: 'fa-solid fa-heart', color: '#f59e0b' },
-        { name: 'B站 / 哔哩哔哩', type: '视频平台', url: '#', icon: 'fa-brands fa-bilibili', color: '#fb7299' },
-        { name: '抖音', type: '短视频', url: '#', icon: 'fa-brands fa-tiktok', color: '#111111' },
-        { name: 'QQ频道', type: '社群平台', url: '#', icon: 'fa-brands fa-qq', color: '#12b7f5' },
-        { name: '微信公众号', type: '社交平台', url: '#', icon: 'fa-brands fa-weixin', color: '#07c160' }
+        { name: '我的世界中国版', type: '游戏平台', url: 'https://mc.163.com/pe/startup/?id=netease&param=%7B%22from%22%3A%20%22profileTeam%22%2C%20%22id%22%3A%20%221627555615%22%7D', icon: 'fa-solid fa-cube', color: '#00d4ff' },
+        { name: '爱发电', type: '创作者平台', url: 'https://www.ifdian.net/a/xunsheng208322', icon: 'fa-solid fa-heart', color: '#f59e0b' },
+        { name: 'B站 / 哔哩哔哩', type: '视频平台', url: 'https://b23.tv/EbGndlr', icon: 'fa-brands fa-bilibili', color: '#fb7299' },
+        { name: '抖音', type: '短视频', url: ' https://v.douyin.com/fShFwLzAsEg', icon: 'fa-brands fa-tiktok', color: '#111111' },
+        { name: 'QQ社群', type: '社群平台', url: 'https://qm.qq.com/q/l5Tb5HeLss', icon: 'fa-brands fa-qq', color: '#12b7f5' },
+        { name: '小红书', type: '社交平台', url: 'https://xhslink.cn/m/AP2A6xnfUQW', icon: 'fa-solid fa-book-open', color: '#ff2442' },
     ];
 
     var MEMBERS = [
-        { name: '极鱼', role: '创始人 / 主理人', desc: '团队总负责人，战略规划与资源对接', avatar: 'fa-solid fa-crown', color: '#f59e0b', image: 'images/member-1.jpg' },
-        { name: '尚国', role: '尚国营建 负责人', desc: '古建筑设计总监，擅长宫殿园林建造', avatar: 'fa-solid fa-chess-rook', color: '#8b5cf6', image: 'images/member-2.jpg' },
-        { name: 'HG', role: 'HG Studio 负责人', desc: '现代建筑设计总监，科幻都市风格', avatar: 'fa-solid fa-city', color: '#0ea5e9', image: 'images/member-3.jpg' },
-        { name: '某皮肤师', role: '皮肤设计师', desc: '精通皮肤绘制，千余款皮肤量产经验', avatar: 'fa-solid fa-palette', color: '#ec4899', image: 'images/member-4.jpg' },
-        { name: '某工程师', role: 'Addon 开发', desc: '行为包/资源包开发，精通红石机械', avatar: 'fa-solid fa-microchip', color: '#10b981', image: 'images/member-5.jpg' },
-        { name: '某画师', role: '像素画师', desc: '拼豆图纸与像素画创作，细节控', avatar: 'fa-solid fa-paint-brush', color: '#ef4444', image: 'images/member-6.jpg' },
-        { name: '运营小助手', role: '运营专员', desc: '社群运营、客服对接、平台发布', avatar: 'fa-solid fa-user-tie', color: '#06b6d4', image: 'images/member-7.jpg' },
-        { name: '审核组', role: '资源审核', desc: '代投稿件审核与质量把控', avatar: 'fa-solid fa-clipboard-check', color: '#84cc16', image: 'images/member-8.jpg' }
+        { name: '元谋YUMI', role: '团队负责人 / 运营 / Addon作者 / 地图指令 / 画师 / 策划 / 编辑 ', desc: '团队负责人，负责策略规划与资源对接，是MC中国版多款热门模组的开发者，部分免费模组的下载量超过100w，同时是音乐人和vocaloid领域的创作者。', avatar: 'fa-solid fa-crown', color: '#f59e0b', image: 'images/ym.webp', links: [{ name: 'B站', icon: 'fa-brands fa-bilibili', url: 'https://b23.tv/tK9lhP5', class: 'bilibili' }, { name: '抖音', icon: 'fa-brands fa-tiktok', url: '#', class: 'douyin' }] },
+        { name: '浔昇-SFL🐟', role: '团队负责人 / 尚国营建负责人 / 建筑作者 / Addon作者 / 画师 / 策划', desc: '浔昇是团队负责人及团队古建筑设计总监，擅长唐、宋、明、清的多体制和风格古建筑建造，还是才华横溢的贴图画师，代表作品众多。', avatar: 'fa-solid fa-chess-rook', color: '#8b5cf6', image: 'images/xs.webp', links: [{ name: 'B站', icon: 'fa-brands fa-bilibili', url: '#', class: 'bilibili' }, { name: '抖音', icon: 'fa-brands fa-tiktok', url: '#', class: 'douyin' }] },
+        { name: '浩歌', role: 'HG Studio 负责人 / 建筑作者', desc: '浩歌是现代建筑设计总监，擅长科幻都市风格的建筑大观创作，浩歌的个人开发者账号：HG2025。', avatar: 'fa-solid fa-city', color: '#0ea5e9', image: 'images/hg.webp' },
+        { name: '翎汐RingShi', role: 'SFL首席筑梦师 / 社群运营 / 自媒体运营', desc: '“笑裁青丝绣彩霓，怀拥妙笔字珠玑。自生芳华化翎羽，长守清心待春汐。。” \n翎汐是SFL社团原创虚拟形象，生日6月8日，作为团队首席筑梦师，总会在大家没有灵感的时候出面解决问题；同时作为虚拟形象对外展示社团风采。', avatar: 'fa-solid fa-palette', color: '#ec4899', image: 'images/lx.webp' },
+        { name: '元初', role: '社群运营 / 皮肤画师', desc: '元初不但擅长MC皮肤绘制，还擅长指绘，他的风格多样，在多个平台都得到了很多人的喜爱。同时元初和元谋一起完成了多个音mad鬼畜企划，负责视频剪辑工作。', avatar: 'fa-solid fa-microchip', color: '#10b981', image: 'images/yc.webp' },
+        { name: '空空', role: '建筑作者 / 玩法地图作者 / 建筑策划', desc: '空空擅长现代风、中世纪风的建筑创作，参与了团队组织多个地图立项的活动。', avatar: 'fa-solid fa-paint-brush', color: '#ef4444', image: 'images/kk.webp' },
+        { name: '挽留', role: '玩法地图作者 / 指令师', desc: '挽留精通玩法地图的策划与实现落地，打造了《杀戮迷宫》、《末日之后》等多个爆款地图，同时挽留还是经验丰富的指令师，对团队做出了不可磨灭的贡献。', avatar: 'fa-solid fa-user-tie', color: '#06b6d4', image: 'images/wl.webp' },
+        { name: '残缺', role: '皮肤作者 / 常稿画师', desc: '残缺(雨中观花)是一位才华横溢的皮肤画师，她擅长多种风格的MC皮肤贴图绘制。作为团队的常稿画师，受到广泛好评。', avatar: 'fa-solid fa-clipboard-check', color: '#84cc16', image: 'images/cq.webp' },
+        { name: '甜妤', role: '皮肤作者', desc: '甜妤的皮肤以精致而被人熟知，她风格多样，发布的作品多个都收获了10w及以上的下载量，得到了广大玩家的喜爱。', avatar: 'fa-solid fa-user', color: '#f43f5e', image: 'images/ty.webp' },
+        { name: 'by_E', role: '皮肤作者 / 常稿画师', desc: 'by_E擅长绘制二次元同人皮肤，他专注于将动漫、漫画中的角色高度还原至MC世界，笔触细腻风格鲜明。', avatar: 'fa-solid fa-user', color: '#8b5cf6', image: 'images/by.webp' },
+        { name: 'a_12', role: '社群运营', desc: 'a_12负责团队社群日常运营与玩家互动，活跃于QQ群、频道等多个社群渠道，热忱解答玩家疑问，维护社群氛围，是团队与玩家之间的重要桥梁。', avatar: 'fa-solid fa-user', color: '#06b6d4', image: 'images/a12.webp' },
+        { name: '苦芒', role: '前社团开平运营 / 装修规划师', desc: '苦芒是前社团开平运营，精通MC室内外装修设计与空间规划，擅长将现代美学与像素艺术结合，打造精致实用的场景空间。', avatar: 'fa-solid fa-user', color: '#f59e0b', image: 'images/km.webp' },
+        { name: 'kino', role: 'Addon作者 / 建模师', desc: 'kino_noikce是一位优秀的建模师，他擅长将头脑中的创意转变为实际，尤其擅长创作汽车模型和科幻风格配件的3D设计，代表作品《复古科幻载具包》深受玩家喜爱。', avatar: 'fa-solid fa-user', color: '#8b5cf6', image: 'images/kn.webp' },
+        { name: '陌笙', role: '皮肤作者 / 常稿画师', desc: '陌笙是一位优秀的皮肤创作者，擅长休闲简约风格的皮肤绘制与配色，作品清新自然、广受好评。陌笙的个人开发者：哲是个工作室。', avatar: 'fa-solid fa-user', color: '#f43f5e', image: 'images/ms.webp' }
     ];
 
     var SHOP_ITEMS = [
-        { title: '仙侠皮肤·十连包', category: '皮肤包', price: '¥29.9', original: '¥49.9', icon: 'fa-user-ninja', desc: '精选十款中国风仙侠主题皮肤', tag: '热销', tagColor: '#ef4444', image: 'images/shop-1.jpg' },
-        { title: '紫禁城·建筑存档', category: '建筑存档', price: '¥99', original: '¥199', icon: 'fa-chess-rook', desc: '1:100比例还原完整紫禁城建筑群', tag: '限时', tagColor: '#f59e0b', image: 'images/shop-2.jpg' },
-        { title: '机械纪元·Addon', category: 'Addon模组', price: '¥19.9', original: '¥39.9', icon: 'fa-gears', desc: '工业时代自动化机械系统Addon', tag: '新品', tagColor: '#10b981', image: 'images/shop-3.jpg' },
-        { title: '动漫拼豆图纸·50款', category: '拼豆图纸', price: '¥9.9', original: '¥29.9', icon: 'fa-cubes', desc: '热门动漫角色拼豆像素图纸合集', tag: '超值', tagColor: '#8b5cf6', image: 'images/shop-4.jpg' },
-        { title: '苏州园林·景观包', category: '建筑存档', price: '¥59', original: '¥128', icon: 'fa-tree', desc: '古典园林亭台楼阁景观建筑存档', tag: '', tagColor: '', image: 'images/shop-5.jpg' },
-        { title: '未来都市·天际线', category: '建筑存档', price: '¥79', original: '¥158', icon: 'fa-city', desc: '50+摩天大楼科幻现代都市存档', tag: '推荐', tagColor: '#0ea5e9', image: 'images/shop-6.jpg' }
+        { title: '北京明紫禁城地图存档1.21及以上版本通用', category: '建筑存档', price: '¥45', original: '¥69.9', icon: 'fa-user-ninja', desc: '1:1还原北京明代紫禁城建筑群', tag: '热销', tagColor: '#ef4444', image: 'images/sp1.webp' },
+        { title: '【像素拼豆】 MC物品全图鉴拼豆图纸', category: '图纸包', price: '¥17.99', original: '¥19.9', icon: 'fa-chess-rook', desc: '人工识色、原创手绘MC物品拼豆图纸包', tag: '限时', tagColor: '#f59e0b', image: 'images/sp2.webp' },
+        { title: '长安唐大明宫地图存档1.21及以上版本通用', category: '建筑存档', price: '¥89', original: '¥119.9', icon: 'fa-gears', desc: '', tag: '新品', tagColor: '#10b981', image: 'images/sp3.webp' },
+        { title: '明清风格明堂', category: '拼豆图纸', price: '¥9.9', original: '¥29.9', icon: 'fa-cubes', desc: '基于武则天时期洛阳城万象神宫（明堂）重构的明清风古建', tag: '超值', tagColor: '#8b5cf6', image: 'images/sp4.webp' },
+        { title: 'Mard全系291色建筑方块拓展包', category: '新品Addon', price: '¥3.6', original: '¥6', icon: 'fa-tree', desc: '以Mard拼豆色谱为灵感1:1复刻，覆盖15大类291款纯色方块，弥补原版色彩空白；支持聊天栏输入色号一键取块、空格分隔批量调取，内置对照图纸与说明书，像素画、彩绘、造景全覆盖。', tag: '必备', tagColor: '#06b6d4', image: 'images/sp5.webp' },
+        { title: '北宋皇家道观地图存档1.21及以上版本通用', category: '建筑存档', price: '¥35', original: '¥58', icon: 'fa-city', desc: '宋风皇家道观建筑群存档，庄重典雅的宗教建筑大观，适配生存与创造模式', tag: '推荐', tagColor: '#0ea5e9', image: 'images/sp6.webp' }
     ];
 
     var PARTNERS = [
-        { name: '尚国营建', en: 'ShangGuo Architecture', type: '建筑合作组织', desc: '古建筑专门建设组织，与极鱼社深度合作，共同打造大型宫殿园林建筑群', url: '#', color: '#f59e0b', logo: 'fa-solid fa-chess-rook', image: 'images/partner-1.jpg' },
-        { name: 'HG Studio', en: 'HG Architecture Studio', type: '建筑合作组织', desc: '现代建筑建设组织，专注科幻都市与现代主义风格建筑设计', url: '#', color: '#0ea5e9', logo: 'fa-solid fa-city', image: 'images/partner-2.jpg' },
-        { name: 'MC皮肤创作联盟', en: 'MC Skin Creators Union', type: '创作联盟', desc: '国内最大的MC皮肤创作者联盟，共同推广优质皮肤作品与设计师', url: '#', color: '#ec4899', logo: 'fa-solid fa-palette', image: 'images/partner-3.jpg' },
-        { name: 'Addon开发者社区', en: 'Addon Dev Community', type: '技术社区', desc: '国内活跃的Addon/行为包开发技术社区，分享教程与资源', url: '#', color: '#8b5cf6', logo: 'fa-solid fa-microchip', image: 'images/partner-4.jpg' },
-        { name: '拼豆创作者之家', en: 'Perler Beads Creators', type: '手工社群', desc: '拼豆像素画手工爱好者聚集地，推广MC主题拼豆创作', url: '#', color: '#10b981', logo: 'fa-solid fa-cubes', image: 'images/partner-5.jpg' },
-        { name: 'MC服务器运营联盟', en: 'MC Server Operators Union', type: '运营联盟', desc: '国内MC服务器运营者交流合作平台，资源共享与活动合作', url: '#', color: '#ef4444', logo: 'fa-solid fa-server', image: 'images/partner-6.jpg' }
+        { name: '尚国营建', en: 'ShangGuo Architecture', type: '建筑合作组织', desc: '古建筑专门建设组织，与极鱼社深度合作，共同打造大型宫殿园林建筑群', url: '#', color: '#f59e0b', logo: 'fa-solid fa-chess-rook', image: 'images/partner-1.webp' },
+        { name: 'HG Studio', en: 'HG Architecture Studio', type: '建筑合作组织', desc: '现代建筑建设组织，专注科幻都市与现代主义风格建筑设计', url: '#', color: '#0ea5e9', logo: 'fa-solid fa-city', image: 'images/partner-2.webp' },
+        { name: 'MC皮肤创作联盟', en: 'MC Skin Creators Union', type: '创作联盟', desc: '国内最大的MC皮肤创作者联盟，共同推广优质皮肤作品与设计师', url: '#', color: '#ec4899', logo: 'fa-solid fa-palette', image: 'images/partner-3.webp' },
+        { name: 'Addon开发者社区', en: 'Addon Dev Community', type: '技术社区', desc: '国内活跃的Addon/行为包开发技术社区，分享教程与资源', url: '#', color: '#8b5cf6', logo: 'fa-solid fa-microchip', image: 'images/partner-4.webp' },
+        { name: '拼豆创作者之家', en: 'Perler Beads Creators', type: '手工社群', desc: '拼豆像素画手工爱好者聚集地，推广MC主题拼豆创作', url: '#', color: '#10b981', logo: 'fa-solid fa-cubes', image: 'images/partner-5.webp' },
+        { name: 'MC服务器运营联盟', en: 'MC Server Operators Union', type: '运营联盟', desc: '国内MC服务器运营者交流合作平台，资源共享与活动合作', url: '#', color: '#ef4444', logo: 'fa-solid fa-server', image: 'images/partner-6.webp' }
     ];
 
     var FRIEND_LINKS = [
-        { name: '我的世界中国版', url: '#', desc: '官方游戏平台', icon: 'fa-solid fa-cube', color: '#00d4ff' },
-        { name: '爱发电', url: '#', desc: '创作者支持平台', icon: 'fa-solid fa-heart', color: '#f59e0b' },
-        { name: 'Minecraft Wiki', url: '#', desc: 'MC百科全书', icon: 'fa-solid fa-book', color: '#8b5cf6' },
-        { name: 'MCBBS', url: '#', desc: 'MC中文论坛', icon: 'fa-solid fa-comments', color: '#0ea5e9' },
-        { name: '像素画教程网', url: '#', desc: '像素画学习平台', icon: 'fa-solid fa-paint-brush', color: '#ec4899' },
-        { name: '红石学院', url: '#', desc: '红石技术教程', icon: 'fa-solid fa-bolt', color: '#ef4444' },
-        { name: '建筑美学社', url: '#', desc: 'MC建筑分享', icon: 'fa-solid fa-building', color: '#10b981' },
-        { name: '皮肤资源站', url: '#', desc: '免费皮肤下载', icon: 'fa-solid fa-user', color: '#06b6d4' }
+        { name: '预留链接', url: '#', desc: '', icon: 'fa-solid fa-link', color: '#94a3b8' },
+        { name: '预留链接', url: '#', desc: '', icon: 'fa-solid fa-link', color: '#94a3b8' },
+        { name: '预留链接', url: '#', desc: '', icon: 'fa-solid fa-link', color: '#94a3b8' },
+        { name: '预留链接', url: '#', desc: '', icon: 'fa-solid fa-link', color: '#94a3b8' },
+        { name: '预留链接', url: '#', desc: '', icon: 'fa-solid fa-link', color: '#94a3b8' },
+        { name: '预留链接', url: '#', desc: '', icon: 'fa-solid fa-link', color: '#94a3b8' },
+        { name: '预留链接', url: '#', desc: '', icon: 'fa-solid fa-link', color: '#94a3b8' },
+        { name: '预留链接', url: '#', desc: '', icon: 'fa-solid fa-link', color: '#94a3b8' }
     ];
 
     // ===== 导航栏 HTML =====
@@ -138,7 +148,7 @@
             '<nav class="navbar" id="navbar">' +
             '  <div class="nav-container">' +
             '    <a href="' + logoHref + '" class="nav-logo">' +
-            '      <img src="images/sfllogo.png" alt="' + SITE.name + '" class="logo-img">' +
+            '      <img src="images/sfllogo.webp" alt="' + SITE.name + '" class="logo-img">' +
             '    </a>' +
             '    <ul class="nav-menu" id="navMenu">' + navItems + '</ul>' +
             '    <button class="nav-toggle" id="navToggle" aria-label="菜单" aria-expanded="false">' +
@@ -172,7 +182,7 @@
             '  <div class="container">' +
             '    <div class="footer-main">' +
             '      <div class="footer-brand">' +
-    '        <div class="footer-logo"><img src="images/sfllogo.png" alt="' + SITE.name + ' Logo" class="logo-img"></div>' +
+    '        <div class="footer-logo"><img src="images/sfllogo.webp" alt="' + SITE.name + ' Logo" class="logo-img"></div>' +
     '        <h3>' + SITE.name + ' <span>' + SITE.en + '</span></h3>' +
             '        <p class="footer-desc">' + SITE.desc + '<br>皮肤 · 建筑 · Addon · 资源定制</p>' +
             '        <div class="footer-socials">' + platformLinks + '</div>' +

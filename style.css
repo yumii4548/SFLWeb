@@ -709,7 +709,7 @@ ul, ol { list-style: none; }
 }
 .showcase-visual {
     position: relative;
-    aspect-ratio: 16 / 10;
+    aspect-ratio: 1 / 1;
     background: var(--grad-soft);
     display: flex; align-items: center; justify-content: center;
     overflow: hidden;
@@ -2340,7 +2340,7 @@ ul, ol { list-style: none; }
 }
 .shop-visual {
     position: relative;
-    aspect-ratio: 16 / 10;
+    aspect-ratio: 1 / 1;
     background: var(--grad-soft);
     display: flex;
     align-items: center;
@@ -2584,6 +2584,31 @@ ul, ol { list-style: none; }
     color: var(--text-muted);
     line-height: 1.6;
 }
+
+/* 成员社交链接小圆圈 */
+.member-links {
+    display: flex;
+    gap: 8px;
+    margin-top: 10px;
+}
+.member-link-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    font-size: 14px;
+    color: #fff;
+    background: #94a3b8;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+.member-link-btn:hover {
+    transform: scale(1.15);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+.member-link-btn.bilibili { background: #fb7299; }
+.member-link-btn.douyin { background: #111; }
 
 /* ============================================
    新增：反馈入口 Feedback
@@ -3065,7 +3090,7 @@ ul, ol { list-style: none; }
 }
 .building-visual {
     position: relative;
-    aspect-ratio: 16 / 10;
+    aspect-ratio: 1 / 1;
     border-radius: var(--radius-xl);
     overflow: hidden;
     box-shadow: var(--shadow-xl);
@@ -3519,7 +3544,7 @@ ul, ol { list-style: none; }
    ============================================ */
 .shop-visual {
     position: relative;
-    aspect-ratio: 16 / 10;
+    aspect-ratio: 1 / 1;
     background: var(--bg-soft);
     overflow: hidden;
 }
@@ -3815,7 +3840,7 @@ ul, ol { list-style: none; }
     .building-item.right .building-tags { justify-content: flex-start; }
     .addons-grid { grid-template-columns: repeat(2, 1fr); }
     .addon-item.wide, .addon-item.square { grid-column: span 1; }
-    .addon-item.square .addon-visual { aspect-ratio: 16 / 10; }
+    .addon-item.square .addon-visual { aspect-ratio: 1 / 1; }
     .works-category { margin-bottom: 56px; }
 }
 @media (max-width: 768px) {
