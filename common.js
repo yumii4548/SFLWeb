@@ -18,6 +18,7 @@
     };
 
     var SERVICES = [
+        { id: 'skinsubmit', icon: '📤', name: '授权皮肤代投', subtitle: 'SKIN SUBMISSION SERVICE', desc: '提供授权皮肤代投服务，专业对接各大平台审核通道，高效稳定，让你的皮肤作品快速上架各平台。', features: ['平台授权代理', '审核通道对接', '快速批量上架', '全程跟踪反馈'], price: '面议', badge: 'NEW', color: '#ec4899', url: '' },
         { id: 'skin', icon: '🎨', name: 'MC 皮肤定制', subtitle: 'SKIN CUSTOMIZATION', desc: '打造独一无二的角色皮肤，涵盖多种风格，从可爱萌系到硬核战斗，总有一款适合你。', features: ['角色皮肤设计', '材质贴图制作', '定制化修改', '批量生产'], price: '面议', badge: 'POPULAR', color: '#00d4ff' },
         { id: 'build', icon: '🏛️', name: '建筑承包', subtitle: 'ARCHITECTURE CONTRACTING', desc: '精美像素建筑，涵盖古风建筑与现代都市，从单体景观到完整城市规划，专业团队施工。', features: ['古建筑群建造', '现代建筑设计', '大型地图规划', '服务器主城建设'], price: '面议', badge: 'HOT', color: '#7c3aed' },
         { id: 'crossversion', icon: '🔄', name: '全版本存档互通', subtitle: 'CROSS-VERSION MIGRATION', desc: '专业的 Minecraft 存档转换服务，实现各版本间存档互通，让你的建筑跨越版本限制。', features: ['基岩版转Java版', 'Java版转基岩版', '版本升级降级', '数据完整性保障'], price: '面议', badge: 'NEW', color: '#f59e0b' },
@@ -26,30 +27,30 @@
 
     var WORKS = {
         buildings: [
-            { id: 'beijingzijincheng', title: '北京紫禁城', subtitle: 'Beijing Forbidden City', category: '古建筑组 · 尚国营建', desc: '1:100比例还原北京紫禁城，包含太和殿、乾清宫等主要建筑群，气势恢宏，工笔细腻，每一处斗拱飞檐都经精心考据。', tags: ['#尚国营建', '#宫殿', '#大型建筑'], icon: 'fa-chess-rook', image: 'images/beijingzijincheng.jpg' },
-            { id: 'datongyungangjichang', title: '大同云冈机场', subtitle: 'Datong Yungang Airport', category: '现代建筑 · HG Studio', desc: '大同意向机场建筑，现代主义设计风格，流线型航站楼+跑道系统，功能齐全，细节逼真，可直接用于服务器地图。', tags: ['#HG Studio', '#现代', '#交通建筑'], icon: 'fa-plane', image: 'images/datongyungangjichang.jpg' },
-            { id: 'reserved-building-1', title: '预留建筑作品 1', subtitle: 'Coming Soon', category: '即将上架', desc: '更多精彩建筑项目正在制作中，敬请期待...', tags: ['#敬请期待'], icon: 'fa-hammer', image: '', isReserved: true },
-            { id: 'reserved-building-2', title: '预留建筑作品 2', subtitle: 'Coming Soon', category: '即将上架', desc: '更多精彩建筑项目正在制作中，敬请期待...', tags: ['#敬请期待'], icon: 'fa-hammer', image: '', isReserved: true }
+            { id: 'beijingzijincheng', title: '北京明紫禁城', subtitle: 'the Forbidden City', category: '古建筑组 · 尚国营建', desc: '1:100比例还原北京明代紫禁城，包含奉天殿、谨身殿等主要建筑群，气势恢宏，工笔细腻，每一处斗拱飞檐都经精心考据。', tags: ['#尚国营建', '#宫殿', '#大型建筑'], icon: 'fa-chess-rook', image: 'images/beijingzijincheng.jpg', author: '' },
+            { id: 'datongyungangjichang', title: '大同云冈机场', subtitle: 'Datong Yungang Airport', category: '现代建筑 · HG Studio', desc: '大同意向机场建筑，现代主义设计风格，流线型航站楼+跑道系统，功能齐全，细节逼真，可直接用于服务器地图。', tags: ['#HG Studio', '#现代', '#交通建筑'], icon: 'fa-plane', image: 'images/datongyungangjichang.jpg', author: '' },
+            { id: 'reserved-building-1', title: '预留建筑作品 1', subtitle: 'Coming Soon', category: '即将上架', desc: '更多精彩建筑项目正在制作中，敬请期待...', tags: ['#敬请期待'], icon: 'fa-hammer', image: '', isReserved: true, author: '' },
+            { id: 'reserved-building-2', title: '预留建筑作品 2', subtitle: 'Coming Soon', category: '即将上架', desc: '更多精彩建筑项目正在制作中，敬请期待...', tags: ['#敬请期待'], icon: 'fa-hammer', image: '', isReserved: true, author: '' }
         ],
         maps: [
-            { id: 'reserved-map-1', title: '预留玩法地图 1', subtitle: 'Coming Soon', category: '即将上架', desc: '更多精彩玩法地图正在制作中，敬请期待...', tags: ['#敬请期待'], icon: 'fa-map', image: '', isReserved: true },
-            { id: 'reserved-map-2', title: '预留玩法地图 2', subtitle: 'Coming Soon', category: '即将上架', desc: '更多精彩玩法地图正在制作中，敬请期待...', tags: ['#敬请期待'], icon: 'fa-map', image: '', isReserved: true },
-            { id: 'reserved-map-3', title: '预留玩法地图 3', subtitle: 'Coming Soon', category: '即将上架', desc: '更多精彩玩法地图正在制作中，敬请期待...', tags: ['#敬请期待'], icon: 'fa-map', image: '', isReserved: true },
-            { id: 'reserved-map-4', title: '预留玩法地图 4', subtitle: 'Coming Soon', category: '即将上架', desc: '更多精彩玩法地图正在制作中，敬请期待...', tags: ['#敬请期待'], icon: 'fa-map', image: '', isReserved: true },
-            { id: 'reserved-map-5', title: '预留玩法地图 5', subtitle: 'Coming Soon', category: '即将上架', desc: '更多精彩玩法地图正在制作中，敬请期待...', tags: ['#敬请期待'], icon: 'fa-map', image: '', isReserved: true },
-            { id: 'reserved-map-6', title: '预留玩法地图 6', subtitle: 'Coming Soon', category: '即将上架', desc: '更多精彩玩法地图正在制作中，敬请期待...', tags: ['#敬请期待'], icon: 'fa-map', image: '', isReserved: true }
+            { id: 'reserved-map-1', title: '预留玩法地图 1', subtitle: 'Coming Soon', category: '即将上架', desc: '更多精彩玩法地图正在制作中，敬请期待...', tags: ['#敬请期待'], icon: 'fa-map', image: '', isReserved: true, author: '' },
+            { id: 'reserved-map-2', title: '预留玩法地图 2', subtitle: 'Coming Soon', category: '即将上架', desc: '更多精彩玩法地图正在制作中，敬请期待...', tags: ['#敬请期待'], icon: 'fa-map', image: '', isReserved: true, author: '' },
+            { id: 'reserved-map-3', title: '预留玩法地图 3', subtitle: 'Coming Soon', category: '即将上架', desc: '更多精彩玩法地图正在制作中，敬请期待...', tags: ['#敬请期待'], icon: 'fa-map', image: '', isReserved: true, author: '' },
+            { id: 'reserved-map-4', title: '预留玩法地图 4', subtitle: 'Coming Soon', category: '即将上架', desc: '更多精彩玩法地图正在制作中，敬请期待...', tags: ['#敬请期待'], icon: 'fa-map', image: '', isReserved: true, author: '' },
+            { id: 'reserved-map-5', title: '预留玩法地图 5', subtitle: 'Coming Soon', category: '即将上架', desc: '更多精彩玩法地图正在制作中，敬请期待...', tags: ['#敬请期待'], icon: 'fa-map', image: '', isReserved: true, author: '' },
+            { id: 'reserved-map-6', title: '预留玩法地图 6', subtitle: 'Coming Soon', category: '即将上架', desc: '更多精彩玩法地图正在制作中，敬请期待...', tags: ['#敬请期待'], icon: 'fa-map', image: '', isReserved: true, author: '' }
         ],
         addons: [
-            { id: 'binfentangzixingche', title: '缤纷糖自行车', subtitle: 'Candy Bike Addon', category: 'Addon · 载具', desc: '糖果主题自行车载具，缤纷色彩搭配多种皮肤，骑行音效+粒子特效，让你的MC世界充满甜蜜与活力。', layout: 'wide', tags: ['#载具', '#Addon', '#可爱'], icon: 'fa-bicycle', image: 'images/binfentangzixingche.jpg' },
-            { id: 'fugukehuanzaijubao', title: '复古科幻载具包', subtitle: 'Retro Sci-Fi Vehicles', category: 'Addon · 载具包', desc: '复古科幻风格载具合集，包含飞行器、悬浮车、复古跑车等10+载具，蒸汽朋克与赛博朋克完美融合。', layout: 'wide', tags: ['#载具包', '#科幻', '#Addon'], icon: 'fa-rocket', image: 'images/fugukehuanzaijubao.jpg' },
-            { id: 'paopaochuan', title: '泡泡船', subtitle: 'Bubble Boat', category: 'Addon · 载具', desc: '可爱的泡泡主题小船，可在水面自由航行，产生泡泡粒子效果，冒险必备萌系载具。', layout: 'square', tags: ['#载具', '#Addon', '#海洋'], icon: 'fa-ship', image: 'images/paopaochuan.jpg' },
-            { id: 'yuanbanshengwuqicheng', title: '原版生物启程', subtitle: 'Vanilla Mobs Enhanced', category: 'Addon · 生物增强', desc: '原版生物全方位增强，新增AI行为、进化形态、驯服机制、骑乘功能，让生存冒险更具挑战和乐趣。', layout: 'square', tags: ['#生物', '#生存', '#Addon'], icon: 'fa-dragon', image: 'images/yuanbanshengwuqicheng.jpg' },
-            { id: 'reserved-addon-1', title: '预留 Addon', subtitle: 'Coming Soon', category: '即将上架', desc: '更多精彩Addon正在开发中，敬请期待...', layout: 'square', tags: ['#敬请期待'], icon: 'fa-gears', image: '', isReserved: true },
-            { id: 'reserved-addon-2', title: '预留 Addon', subtitle: 'Coming Soon', category: '即将上架', desc: '更多精彩Addon正在开发中，敬请期待...', layout: 'square', tags: ['#敬请期待'], icon: 'fa-gears', image: '', isReserved: true },
-            { id: 'reserved-addon-3', title: '预留 Addon', subtitle: 'Coming Soon', category: '即将上架', desc: '更多精彩Addon正在开发中，敬请期待...', layout: 'square', tags: ['#敬请期待'], icon: 'fa-gears', image: '', isReserved: true },
-            { id: 'reserved-addon-4', title: '预留 Addon', subtitle: 'Coming Soon', category: '即将上架', desc: '更多精彩Addon正在开发中，敬请期待...', layout: 'square', tags: ['#敬请期待'], icon: 'fa-gears', image: '', isReserved: true },
-            { id: 'reserved-addon-5', title: '预留 Addon', subtitle: 'Coming Soon', category: '即将上架', desc: '更多精彩Addon正在开发中，敬请期待...', layout: 'square', tags: ['#敬请期待'], icon: 'fa-gears', image: '', isReserved: true },
-            { id: 'reserved-addon-6', title: '预留 Addon', subtitle: 'Coming Soon', category: '即将上架', desc: '更多精彩Addon正在开发中，敬请期待...', layout: 'square', tags: ['#敬请期待'], icon: 'fa-gears', image: '', isReserved: true }
+            { id: 'binfentangzixingche', title: '缤纷糖自行车', subtitle: 'Candy Bike Addon', category: 'Addon · 载具', desc: '糖果主题自行车载具，缤纷色彩搭配多种皮肤，骑行音效+粒子特效，让你的MC世界充满甜蜜与活力。', layout: 'wide', tags: ['#载具', '#Addon', '#可爱'], icon: 'fa-bicycle', image: 'images/binfentangzixingche.jpg', author: '' },
+            { id: 'fugukehuanzaijubao', title: '复古科幻载具包', subtitle: 'Retro Sci-Fi Vehicles', category: 'Addon · 载具包', desc: '复古科幻风格载具合集，包含飞行器、悬浮车、复古跑车等10+载具，蒸汽朋克与赛博朋克完美融合。', layout: 'wide', tags: ['#载具包', '#科幻', '#Addon'], icon: 'fa-rocket', image: 'images/fugukehuanzaijubao.jpg', author: '' },
+            { id: 'paopaochuan', title: '泡泡船', subtitle: 'Bubble Boat', category: 'Addon · 载具', desc: '可爱的泡泡主题小船，可在水面自由航行，产生泡泡粒子效果，冒险必备萌系载具。', layout: 'square', tags: ['#载具', '#Addon', '#海洋'], icon: 'fa-ship', image: 'images/paopaochuan.jpg', author: '' },
+            { id: 'yuanbanshengwuqicheng', title: '原版生物启程', subtitle: 'Vanilla Mobs Enhanced', category: 'Addon · 生物增强', desc: '原版生物全方位增强，新增AI行为、进化形态、驯服机制、骑乘功能，让生存冒险更具挑战和乐趣。', layout: 'square', tags: ['#生物', '#生存', '#Addon'], icon: 'fa-dragon', image: 'images/yuanbanshengwuqicheng.jpg', author: '' },
+            { id: 'reserved-addon-1', title: '预留 Addon', subtitle: 'Coming Soon', category: '即将上架', desc: '更多精彩Addon正在开发中，敬请期待...', layout: 'square', tags: ['#敬请期待'], icon: 'fa-gears', image: '', isReserved: true, author: '' },
+            { id: 'reserved-addon-2', title: '预留 Addon', subtitle: 'Coming Soon', category: '即将上架', desc: '更多精彩Addon正在开发中，敬请期待...', layout: 'square', tags: ['#敬请期待'], icon: 'fa-gears', image: '', isReserved: true, author: '' },
+            { id: 'reserved-addon-3', title: '预留 Addon', subtitle: 'Coming Soon', category: '即将上架', desc: '更多精彩Addon正在开发中，敬请期待...', layout: 'square', tags: ['#敬请期待'], icon: 'fa-gears', image: '', isReserved: true, author: '' },
+            { id: 'reserved-addon-4', title: '预留 Addon', subtitle: 'Coming Soon', category: '即将上架', desc: '更多精彩Addon正在开发中，敬请期待...', layout: 'square', tags: ['#敬请期待'], icon: 'fa-gears', image: '', isReserved: true, author: '' },
+            { id: 'reserved-addon-5', title: '预留 Addon', subtitle: 'Coming Soon', category: '即将上架', desc: '更多精彩Addon正在开发中，敬请期待...', layout: 'square', tags: ['#敬请期待'], icon: 'fa-gears', image: '', isReserved: true, author: '' },
+            { id: 'reserved-addon-6', title: '预留 Addon', subtitle: 'Coming Soon', category: '即将上架', desc: '更多精彩Addon正在开发中，敬请期待...', layout: 'square', tags: ['#敬请期待'], icon: 'fa-gears', image: '', isReserved: true, author: '' }
         ],
         skins: [
             { id: 'skin-1', title: '仙侠主题系列', author: '极鱼社·皮肤组', category: '仙侠风', desc: '中国风仙侠角色皮肤，12款精美设计', image: 'images/skin-1.jpg' },

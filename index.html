@@ -345,7 +345,7 @@
             if (!grid) return;
             SITE_DATA.SERVICES.forEach(function(s, idx) {
                 var card = document.createElement('a');
-                card.href = '#services';
+                card.href = s.url || '#services';
                 card.className = 'service-card reveal';
                 card.style.setProperty('--card-color', s.color);
                 card.style.setProperty('--delay', (idx * 0.08) + 's');
@@ -385,6 +385,7 @@
                     '<h3>' + b.title + '</h3>' +
                     '<p>' + b.desc + '</p>' +
                     '<div class="building-tags">' + b.tags.map(function(t){return '<span>'+t+'</span>';}).join('') + '</div>' +
+                    '<span class="work-author">作者：' + (b.author || '——') + '</span>' +
                     '</div>';
                 list.appendChild(item);
             });
@@ -414,6 +415,7 @@
                     '<h4>' + a.title + '</h4>' +
                     '<p>' + a.desc + '</p>' +
                     '<div class="addon-tags">' + a.tags.map(function(t){return '<span>'+t+'</span>';}).join('') + '</div>' +
+                    '<span class="work-author">作者：' + (a.author || '——') + '</span>' +
                     '</div>';
                 grid.appendChild(item);
             });
@@ -443,6 +445,7 @@
                     '<h3>' + m.title + '</h3>' +
                     '<p>' + m.desc + '</p>' +
                     '<div class="building-tags">' + m.tags.map(function(t){return '<span>'+t+'</span>';}).join('') + '</div>' +
+                    '<span class="work-author">作者：' + (m.author || '——') + '</span>' +
                     '</div>';
                 list.appendChild(item);
             });
