@@ -6,7 +6,9 @@
     <title>极鱼社 SwiftFishLab - 专注于 Minecraft 开发的团队</title>
     <meta name="description" content="极鱼社（Swift Fish Lab），始创于2021年，Minecraft皮肤、建筑、Addon组件综合型开发团队，累计下载量超2000万。">
     <meta name="keywords" content="极鱼社,Swift Fish Lab,Minecraft,我的世界,皮肤,建筑,Addon,组件开发">
-    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="preload" as="image" href="images/hero-bg.png" fetchpriority="high">
+    <link rel="preload" as="image" href="images/sfllogo.png">
+    <link rel="stylesheet" href="css/font-awesome.min.css" media="print" onload="this.media='all';this.onload=null">
     <link rel="stylesheet" href="style.css">
     <noscript><style>.reveal{opacity:1!important;transform:none!important}</style></noscript>
 </head>
@@ -72,7 +74,7 @@
                             <div class="floating-cube cube-3"></div>
                             <div class="visual-center">
                                 <div class="visual-logo">
-                                    <img src="images/sfllogo.png" alt="极鱼社 Logo" class="visual-logo-img">
+                                    <img src="images/sfllogo.png" alt="极鱼社 Logo" class="visual-logo-img" loading="lazy" decoding="async">
                                 </div>
                             </div>
                         </div>
@@ -369,7 +371,7 @@
                 item.className = 'building-item reveal ' + (isLeft ? 'left' : 'right') + reservedClass;
                 item.style.setProperty('--delay', (idx * 0.08) + 's');
                 var visualHtml = b.image && !b.isReserved
-                    ? '<img src="' + b.image + '" alt="' + b.title + '" class="building-img" onerror="this.outerHTML=\'<div class=\\\'building-placeholder\\\'><i class=\\\'fa-solid ' + b.icon + '\\\'></i></div>\'">'
+                    ? '<img src="' + b.image + '" alt="' + b.title + '" class="building-img" loading="lazy" decoding="async" onerror="this.outerHTML=\'<div class=\\\'building-placeholder\\\'><i class=\\\'fa-solid ' + b.icon + '\\\'></i></div>\'">'
                     : '<div class="building-placeholder' + (b.isReserved ? ' empty' : '') + '"><i class="fa-solid ' + b.icon + '"></i>' + (b.isReserved ? '<span class=\\\'empty-label\\\'>图片预留位</span>' : '') + '</div>';
                 item.innerHTML =
                     '<div class="building-visual">' +
@@ -398,7 +400,7 @@
                 item.className = 'addon-item reveal ' + layoutClass + reservedClass;
                 item.style.setProperty('--delay', (idx * 0.06) + 's');
                 var visualHtml = a.image && !a.isReserved
-                    ? '<img src="' + a.image + '" alt="' + a.title + '" class="addon-img" onerror="this.outerHTML=\'<div class=\\\'addon-placeholder\\\'><i class=\\\'fa-solid ' + a.icon + '\\\'></i></div>\'">'
+                    ? '<img src="' + a.image + '" alt="' + a.title + '" class="addon-img" loading="lazy" decoding="async" onerror="this.outerHTML=\'<div class=\\\'addon-placeholder\\\'><i class=\\\'fa-solid ' + a.icon + '\\\'></i></div>\'">'
                     : '<div class="addon-placeholder' + (a.isReserved ? ' empty' : '') + '"><i class="fa-solid ' + a.icon + '"></i>' + (a.isReserved ? '<span class=\\\'empty-label\\\'>图片预留位</span>' : '') + '</div>';
                 item.innerHTML =
                     '<div class="addon-visual">' +
@@ -427,7 +429,7 @@
                 item.className = 'building-item reveal ' + (isLeft ? 'left' : 'right') + reservedClass;
                 item.style.setProperty('--delay', (idx * 0.08) + 's');
                 var visualHtml = m.image && !m.isReserved
-                    ? '<img src="' + m.image + '" alt="' + m.title + '" class="building-img" onerror="this.outerHTML=\'<div class=\\\'building-placeholder\\\'><i class=\\\'fa-solid ' + m.icon + '\\\'></i></div>\'">'
+                    ? '<img src="' + m.image + '" alt="' + m.title + '" class="building-img" loading="lazy" decoding="async" onerror="this.outerHTML=\'<div class=\\\'building-placeholder\\\'><i class=\\\'fa-solid ' + m.icon + '\\\'></i></div>\'">'
                     : '<div class="building-placeholder' + (m.isReserved ? ' empty' : '') + '"><i class="fa-solid ' + m.icon + '"></i>' + (m.isReserved ? '<span class=\\\'empty-label\\\'>图片预留位</span>' : '') + '</div>';
                 item.innerHTML =
                     '<div class="building-visual">' +
@@ -458,7 +460,7 @@
                 card.className = 'skin-card';
                 var cardIdx = idx % skins.length;
                 var imgHtml = s.image
-                    ? '<img src="' + s.image + '" alt="' + s.title + '" class="skin-img" onerror="this.outerHTML=\'<div class=\\\'skin-img-placeholder\\\'><i class=\\\'fa-solid fa-user\\\'></i><span class=\\\'ph-label\\\'>图片预留位</span></div>\'">'
+                    ? '<img src="' + s.image + '" alt="' + s.title + '" class="skin-img" loading="lazy" decoding="async" onerror="this.outerHTML=\'<div class=\\\'skin-img-placeholder\\\'><i class=\\\'fa-solid fa-user\\\'></i><span class=\\\'ph-label\\\'>图片预留位</span></div>\'">'
                     : '<div class="skin-img-placeholder"><i class="fa-solid fa-user"></i><span class="ph-label">图片预留位</span></div>';
                 card.innerHTML =
                     imgHtml +
@@ -490,7 +492,7 @@
                 item.style.setProperty('--delay', (idx * 0.08) + 's');
                 var tagHtml = p.tag ? '<span class="shop-tag" style="background:' + p.tagColor + '">' + p.tag + '</span>' : '';
                 var visualHtml = p.image
-                    ? '<img src="' + p.image + '" alt="' + p.title + '" class="shop-img" onerror="this.outerHTML=\'<div class=\\\'shop-img-ph\\\'><i class=\\\'fa-solid ' + p.icon + '\\\'></i></div>\'">'
+                    ? '<img src="' + p.image + '" alt="' + p.title + '" class="shop-img" loading="lazy" decoding="async" onerror="this.outerHTML=\'<div class=\\\'shop-img-ph\\\'><i class=\\\'fa-solid ' + p.icon + '\\\'></i></div>\'">'
                     : '<div class="shop-img-ph"><i class="fa-solid ' + p.icon + '"></i></div>';
                 item.innerHTML =
                     '<div class="shop-visual">' +
@@ -521,7 +523,7 @@
                 card.style.setProperty('--m-color', m.color);
                 var visualHtml = m.image
                     ? '<div class="member-visual">' +
-                      '  <img src="' + m.image + '" alt="' + m.name + '" onerror="this.outerHTML=\'<div class=\\\'member-ph-avatar\\\'><i class=\\\'' + m.avatar + '\\\'></i></div>\'">' +
+                      '  <img src="' + m.image + '" alt="' + m.name + '" loading="lazy" decoding="async" onerror="this.outerHTML=\'<div class=\\\'member-ph-avatar\\\'><i class=\\\'' + m.avatar + '\\\'></i></div>\'">' +
                       '</div>'
                     : '<div class="member-visual"><div class="member-ph-avatar"><i class="' + m.avatar + '"></i></div></div>';
                 card.innerHTML =

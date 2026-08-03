@@ -6,7 +6,7 @@
     <title>合作伙伴 - 极鱼社 Swift Fish Lab</title>
     <meta name="description" content="极鱼社合作伙伴 - 与众多优秀团队与社区携手共进，共同打造更优质的Minecraft体验">
     <link rel="icon" type="image/png" href="images/sfllogo.png">
-    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css" media="print" onload="this.media='all';this.onload=null">
     <link rel="stylesheet" href="style.css">
     <noscript><style>.reveal{opacity:1!important;transform:none!important}</style></noscript>
 </head>
@@ -54,7 +54,7 @@
                 card.style.setProperty('--p-color', p.color || '#0ea5e9');
                 card.style.setProperty('--p-color-alpha', (p.color || '#0ea5e9') + '24');
                 var coverHtml = p.image
-                    ? '<img src="' + p.image + '" alt="' + p.name + '" onerror="this.outerHTML=\'<div class=\\\'partner-cover-ph\\\'><i class=\\\'' + p.logo + '\\\'></i></div>\'">'
+                    ? '<img src="' + p.image + '" alt="' + p.name + '" loading="lazy" decoding="async" onerror="this.outerHTML=\'<div class=\\\'partner-cover-ph\\\'><i class=\\\'' + p.logo + '\\\'></i></div>\'">'
                     : '<div class="partner-cover-ph"><i class="' + p.logo + '"></i></div>';
                 card.innerHTML =
                     '<div class="partner-cover">' +
