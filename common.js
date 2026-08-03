@@ -90,7 +90,7 @@
         { name: '甜妤', role: '皮肤作者', desc: '甜妤的皮肤以精致而被人熟知，她风格多样，发布的作品多个都收获了10w及以上的下载量，得到了广大玩家的喜爱。', avatar: 'fa-solid fa-user', color: '#f43f5e', image: 'images/ty.webp' },
         { name: 'by_E', role: '皮肤作者 / 常稿画师', desc: 'by_E擅长绘制二次元同人皮肤，他专注于将动漫、漫画中的角色高度还原至MC世界，笔触细腻风格鲜明。', avatar: 'fa-solid fa-user', color: '#8b5cf6', image: 'images/by.webp' },
         { name: 'a_12', role: '社群运营', desc: 'a_12负责团队社群日常运营与玩家互动，活跃于QQ群、频道等多个社群渠道，热忱解答玩家疑问，维护社群氛围，是团队与玩家之间的重要桥梁。', avatar: 'fa-solid fa-user', color: '#06b6d4', image: 'images/a12.webp' },
-        { name: '苦芒', role: '前社团开平运营 / 装修规划师', desc: '苦芒是前社团开平运营，精通MC室内外装修设计与空间规划，擅长将现代美学与像素艺术结合，打造精致实用的场景空间。', avatar: 'fa-solid fa-user', color: '#f59e0b', image: 'images/km.webp' },
+        { name: '苦芒', role: '前社团开平运营', desc: '苦芒是前社团开平运营。', avatar: 'fa-solid fa-user', color: '#f59e0b', image: 'images/km.webp' },
         { name: 'kino', role: 'Addon作者 / 建模师', desc: 'kino_noikce是一位优秀的建模师，他擅长将头脑中的创意转变为实际，尤其擅长创作汽车模型和科幻风格配件的3D设计，代表作品《复古科幻载具包》深受玩家喜爱。', avatar: 'fa-solid fa-user', color: '#8b5cf6', image: 'images/kn.webp' },
         { name: '陌笙', role: '皮肤作者 / 常稿画师', desc: '陌笙是一位优秀的皮肤创作者，擅长休闲简约风格的皮肤绘制与配色，作品清新自然、广受好评。陌笙的个人开发者：哲是个工作室。', avatar: 'fa-solid fa-user', color: '#f43f5e', image: 'images/ms.webp' }
     ];
@@ -105,20 +105,20 @@
     ];
 
     var PARTNERS = [
-        { name: '尚国营建', en: 'ShangGuo Architecture', type: '建筑合作组织', desc: '古建筑专门建设组织，与极鱼社深度合作，共同打造大型宫殿园林建筑群', url: '#', color: '#f59e0b', logo: 'fa-solid fa-chess-rook', image: 'images/partner-1.webp' },
-        { name: 'HG Studio', en: 'HG Architecture Studio', type: '建筑合作组织', desc: '现代建筑建设组织，专注科幻都市与现代主义风格建筑设计', url: '#', color: '#0ea5e9', logo: 'fa-solid fa-city', image: 'images/partner-2.webp' },
-        { name: 'MC皮肤创作联盟', en: 'MC Skin Creators Union', type: '创作联盟', desc: '国内最大的MC皮肤创作者联盟，共同推广优质皮肤作品与设计师', url: '#', color: '#ec4899', logo: 'fa-solid fa-palette', image: 'images/partner-3.webp' },
-        { name: 'Addon开发者社区', en: 'Addon Dev Community', type: '技术社区', desc: '国内活跃的Addon/行为包开发技术社区，分享教程与资源', url: '#', color: '#8b5cf6', logo: 'fa-solid fa-microchip', image: 'images/partner-4.webp' },
-        { name: '拼豆创作者之家', en: 'Perler Beads Creators', type: '手工社群', desc: '拼豆像素画手工爱好者聚集地，推广MC主题拼豆创作', url: '#', color: '#10b981', logo: 'fa-solid fa-cubes', image: 'images/partner-5.webp' },
-        { name: 'MC服务器运营联盟', en: 'MC Server Operators Union', type: '运营联盟', desc: '国内MC服务器运营者交流合作平台，资源共享与活动合作', url: '#', color: '#ef4444', logo: 'fa-solid fa-server', image: 'images/partner-6.webp' }
+        { name: '上海熵联天创网络科技有限公司', en: 'Entropy Link Tianchuang', type: '合作组织', desc: '独立游戏开发团队，代表作品《邻家之钥》，是极鱼社战略合作伙伴。', url: 'https://tianentropy.cn/', color: '#f59e0b', logo: 'fa-solid fa-chess-rook', image: 'images/tpy.png' },
+        { name: '宙鱼文化工作室', en: 'Zhouyu Culture Studio', type: '合作组织', desc: '宙鱼网络工作室，成立于2020年6月，至今旗下三名直属开发者，两名合作开发者，总发表组件450+，专业与广告设计、新媒体运营、文创宣发等 咨询联系:CBUAD@qq.com。', url: 'https://space.bilibili.com/486126114', color: '#0ea5e9', logo: 'fa-solid fa-city', image: 'images/cnzy.webp' },
+        { name: 'Realize a Dream Music Club', en: 'R.A.D Music Club', type: '创作联盟', desc: 'R.A.D. Music Club是一家立足于全球视野、面向未来的音乐团队，与极鱼社联手创作原创歌曲。', url: 'https://space.bilibili.com/105791477', color: '#ec4899', logo: 'fa-solid fa-palette', image: 'images/radlogo.webp' },
+        { name: '云筑设计团队', en: 'Cloud Pavilion Work', type: '建筑团队', desc: '云筑设计团队由HOYSH创立，成立于2026年3月12日，主营现代式建筑，代表作：《天宗市》《希伦市》《像素大同系列》《像素深圳》', url: 'https://v.douyin.com/8_n7XMWClPc/', color: '#8b5cf6', logo: 'fa-solid fa-microchip', image: 'images/yzlogo.webp' },
+        { name: '鸽予文化', en: 'Ge Yu Culture', type: '合作组织', desc: '上海鸽予文化有限公司，成立于2024年12月，主业为新媒体宣发及文化设计，与多名创作者展开合作，旗下鸽予工作室主营游戏《我的世界》相关物料制作。', url: '#', color: '#10b981', logo: 'fa-solid fa-cubes', image: 'images/gy.webp' },
+        { name: '123', en: '', type: '合作组织', desc: '123', url: '#', color: '#94a3b8', image: '' }
     ];
 
     var FRIEND_LINKS = [
-        { name: '预留链接', url: '#', desc: '', icon: 'fa-solid fa-link', color: '#94a3b8' },
-        { name: '预留链接', url: '#', desc: '', icon: 'fa-solid fa-link', color: '#94a3b8' },
-        { name: '预留链接', url: '#', desc: '', icon: 'fa-solid fa-link', color: '#94a3b8' },
-        { name: '预留链接', url: '#', desc: '', icon: 'fa-solid fa-link', color: '#94a3b8' },
-        { name: '预留链接', url: '#', desc: '', icon: 'fa-solid fa-link', color: '#94a3b8' },
+        { name: '上海熵联天创', url: 'https://tianentropy.cn/', desc: '独立游戏开发团队', icon: 'fa-solid fa-gamepad', color: '#f59e0b' },
+        { name: '宙鱼文化工作室', url: 'https://space.bilibili.com/486126114', desc: '新媒体运营与文创宣发', icon: 'fa-solid fa-city', color: '#0ea5e9' },
+        { name: 'R.A.D Music Club', url: 'https://space.bilibili.com/105791477', desc: '全球视野音乐团队', icon: 'fa-solid fa-music', color: '#ec4899' },
+        { name: '云筑设计团队', url: 'https://v.douyin.com/8_n7XMWClPc/', desc: '现代式建筑团队', icon: 'fa-solid fa-building', color: '#8b5cf6' },
+        { name: '鸽予文化', url: '#', desc: '新媒体宣发及文化设计', icon: 'fa-solid fa-feather', color: '#10b981' },
         { name: '预留链接', url: '#', desc: '', icon: 'fa-solid fa-link', color: '#94a3b8' },
         { name: '预留链接', url: '#', desc: '', icon: 'fa-solid fa-link', color: '#94a3b8' },
         { name: '预留链接', url: '#', desc: '', icon: 'fa-solid fa-link', color: '#94a3b8' }
@@ -166,7 +166,7 @@
         }).join('');
 
         var serviceLinks = SERVICES.map(function (s) {
-            return '<li><a href="#services">' + s.name + '</a></li>';
+            return '<li><a href="' + (s.url || '#services') + '"' + (s.url ? ' target="_blank" rel="noopener"' : '') + '>' + s.name + '</a></li>';
         }).join('');
 
         var friendLinksHtml = FRIEND_LINKS.map(function (f) {
@@ -201,8 +201,8 @@
             '      <div class="footer-services"><h4>业务范围</h4><ul>' + serviceLinks + '</ul></div>' +
             '      <div class="footer-contact"><h4>联系方式</h4>' +
             '        <div class="contact-item"><i class="fa-solid fa-users"></i><div><span>交流群</span><a href="#" onclick="copyText(\'' + SITE.qq.chat + '\');return false;">' + SITE.qq.chat + '</a></div></div>' +
-            '        <div class="contact-item"><i class="fa-solid fa-user-plus"></i><div><span>合作群</span><a href="#" onclick="copyText(\'' + SITE.qq.join1 + '\');return false;">' + SITE.qq.join1 + '</a></div></div>' +
-            '        <div class="contact-item"><i class="fa-solid fa-user-plus"></i><div><span>合作群</span><a href="#" onclick="copyText(\'' + SITE.qq.join2 + '\');return false;">' + SITE.qq.join2 + '</a></div></div>' +
+            '        <div class="contact-item"><i class="fa-solid fa-user-plus"></i><div><span>负责人QQ</span><a href="#" onclick="copyText(\'' + SITE.qq.join1 + '\');return false;">' + SITE.qq.join1 + '</a></div></div>' +
+            '        <div class="contact-item"><i class="fa-solid fa-user-plus"></i><div><span>负责人QQ</span><a href="#" onclick="copyText(\'' + SITE.qq.join2 + '\');return false;">' + SITE.qq.join2 + '</a></div></div>' +
             '      </div>' +
             '      <div class="footer-friendlinks"><h4>友情链接</h4><div class="friend-links">' + friendLinksHtml + '</div></div>' +
             '    </div>' +

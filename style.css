@@ -2491,11 +2491,23 @@ ul, ol { list-style: none; }
     background: var(--primary-dark);
     transform: scale(1.04);
 }
+.channel-mc .channel-icon {
+    background: linear-gradient(135deg, #00d4ff20, #0ea5e920);
+    color: #00d4ff;
+}
+.channel-mc .channel-btn {
+    background: #00d4ff;
+    color: #fff;
+}
+.channel-mc .channel-btn:hover {
+    background: #00b8e0;
+    transform: scale(1.04);
+}
 
 /* 移动端适配 */
 @media (max-width: 768px) {
     .shop-channels {
-        grid-template-columns: 1fr;
+        grid-template-columns: repeat(2, 1fr);
     }
     .channel-card {
         flex-wrap: wrap;
@@ -3860,16 +3872,71 @@ ul, ol { list-style: none; }
     .skin-avatar { width: 80px; height: 80px; font-size: 36px; }
 }
 @media (max-width: 480px) {
-    .stats-row { grid-template-columns: 1fr; gap: 24px; }
-    .visual-float-badge {
-        position: static;
-        margin: 16px 0;
-    }
-    .info-platforms { grid-template-columns: 1fr; }
-    .join-benefits { grid-template-columns: 1fr; }
-    .shop-price { font-size: 20px; }
-    .hero-text { padding: 28px 20px; }
-    .hero-slogan { letter-spacing: 2px; font-size: 16px; }
+    /* 容器 */
+    .container { padding: 0 16px; }
+    /* 导航 */
+    .navbar { padding: 10px 16px; }
+    .logo-img { height: 32px; }
+    /* Hero */
+    .hero-text { padding: 24px 16px; }
+    .hero-slogan { letter-spacing: 2px; font-size: 15px; }
+    .hero-teamname { font-size: 28px; letter-spacing: 1px; }
+    .hero-teamname span { font-size: 13px; letter-spacing: 2px; }
+    .hero-scroll { bottom: 16px; }
+    /* 统计 */
+    .stats-row { grid-template-columns: 1fr; gap: 20px; }
+    .stat-value { font-size: 32px; }
+    /* 标题 */
+    .section { padding: 48px 0; }
+    .section-title { font-size: 24px; }
+    .section-subtitle { font-size: 13px; }
+    /* 关于 */
+    .visual-float-badge { position: static; margin: 12px 0; }
+    .about-title { font-size: 22px; }
+    .about-subteams { flex-direction: column; gap: 10px; }
+    /* 建筑作品 */
+    .building-item, .building-item.right { grid-template-columns: 1fr; gap: 20px; }
+    .building-item.right .building-visual { order: 0; }
+    .building-visual { aspect-ratio: 4 / 3; }
     .building-category, .addon-category { font-size: 10px; padding: 3px 10px; }
-    .skin-card { width: 220px; }
+    /* Addon */
+    .addons-grid { grid-template-columns: 1fr; gap: 20px; }
+    /* 皮肤 */
+    .skin-card { width: 200px; }
+    /* 服务 */
+    .services-grid { grid-template-columns: 1fr; }
+    /* 在售资源 */
+    .shop-grid { grid-template-columns: 1fr; }
+    .shop-price { font-size: 18px; }
+    .shop-channels { grid-template-columns: 1fr; }
+    .channel-card { padding: 20px; }
+    .channel-body h4 { font-size: 14px; }
+    .channel-body p { font-size: 12px; }
+    /* 成员 */
+    .members-grid { grid-template-columns: repeat(2, 1fr); gap: 16px; }
+    .member-card { padding: 20px 16px; }
+    .member-info h3 { font-size: 14px; }
+    .member-role { font-size: 11px; }
+    .member-info p { font-size: 12px; }
+    /* 反馈 */
+    .feedback-layout { grid-template-columns: 1fr; }
+    /* 加入 */
+    .join-card { padding: 32px 18px; }
+    .join-benefits { grid-template-columns: 1fr; }
+    .join-groups { gap: 12px; }
+    .join-group-item { padding: 14px; }
+    /* 平台 */
+    .platforms-grid { grid-template-columns: 1fr 1fr; gap: 12px; }
+    .info-platforms { grid-template-columns: 1fr; }
+    /* 合作伙伴 */
+    .partners-grid { grid-template-columns: 1fr; }
+    /* 页脚 */
+    .footer-main { grid-template-columns: 1fr; gap: 28px; }
+    .footer-nav ul li a, .footer-services ul li a { font-size: 13px; padding: 6px 0; }
+    /* 业务详情页 */
+    .service-detail-item, .service-detail-item.reverse { padding: 24px 16px; }
+    /* 联系页 */
+    .contact-layout { grid-template-columns: 1fr; }
+    .qq-big { padding: 16px; }
+    .qq-num { font-size: 22px; }
 }

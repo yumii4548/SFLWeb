@@ -43,9 +43,9 @@
     </script>
     <link rel="preload" as="image" href="images/hero-bg.webp" fetchpriority="high">
     <link rel="preload" as="image" href="images/sfllogo.webp">
-    <link rel="preload" as="style" href="style.css">
+    <link rel="preload" as="style" href="style.min.css">
     <link rel="stylesheet" href="css/font-awesome.min.css" media="print" onload="this.media='all';this.onload=null">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.min.css">
     <noscript><style>.reveal{opacity:1!important;transform:none!important}</style></noscript>
 </head>
 <body class="page-home">
@@ -199,7 +199,7 @@
                     <span class="section-tag">OUR SERVICES</span>
                     <h2 class="section-title">业务服务</h2>
                     <div class="section-divider"></div>
-                    <p class="section-subtitle">对外开展六大核心业务，覆盖 Minecraft 、二次元创作全生态，点击即可跳转</p>
+                    <p class="section-subtitle">对外开展六大核心业务，覆盖 Minecraft 、ACG创作全生态，点击即可跳转</p>
                 </div>
                 <div class="services-grid" id="servicesGrid"></div>
             </div>
@@ -222,15 +222,15 @@
                             <h4>爱发电平台</h4>
                             <p>在爱发电选购资源，享受平台保障交易，安全便捷</p>
                         </div>
-                        <a href="#" class="channel-btn" target="_blank" rel="noopener">前往购买 <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        <a href="https://ifdian.net/a/xunsheng208322" class="channel-btn" target="_blank" rel="noopener">前往购买 <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
                     </div>
-                    <div class="channel-card channel-qq">
-                        <div class="channel-icon"><i class="fa-brands fa-qq"></i></div>
+                    <div class="channel-card channel-mc">
+                        <div class="channel-icon"><i class="fa-solid fa-cube"></i></div>
                         <div class="channel-body">
-                            <h4>社群购买</h4>
-                            <p>加入官方QQ群 <strong>914029611</strong>，联系客服直接下单</p>
+                            <h4>MC中国版资源大厅</h4>
+                            <p>发布账号：<strong>极鱼社O组</strong>，部分资源同步上架资源大厅，可直接在游戏内购买下载</p>
                         </div>
-                        <button class="channel-btn" onclick="copyText('914029611')">复制群号 <i class="fa-regular fa-copy"></i></button>
+                        <a href="https://mc.163.com/pe/startup/?id=netease&param=%7B%22from%22%3A%20%22profileTeam%22%2C%20%22id%22%3A%20%221627555615%22%7D" class="channel-btn" target="_blank" rel="noopener">前往查看 <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
                     </div>
                 </div>
             </div>
@@ -327,14 +327,14 @@
                             <div class="join-group-item">
                                 <span class="join-icon"><i class="fa-solid fa-user-plus"></i></span>
                                 <div class="join-group-info">
-                                    <strong>加入 / 合作群 1</strong>
+                                    <strong>负责人QQ 1</strong>
                                     <div class="join-group-num" onclick="copyText('2176179242')">2176179242 <i class="fa-regular fa-copy"></i></div>
                                 </div>
                             </div>
                             <div class="join-group-item">
                                 <span class="join-icon"><i class="fa-solid fa-handshake"></i></span>
                                 <div class="join-group-info">
-                                    <strong>加入 / 合作群 2</strong>
+                                    <strong>负责人QQ 2</strong>
                                     <div class="join-group-num" onclick="copyText('83345672')">83345672 <i class="fa-regular fa-copy"></i></div>
                                 </div>
                             </div>
@@ -364,7 +364,7 @@
         </section>
     </main>
 
-    <script src="common.js"></script>
+    <script src="common.min.js"></script>
     <script>
         // 注入导航和页脚（安全调用）
         try { if (typeof injectLayout === 'function') injectLayout('hero'); } catch(e) { console.warn('布局注入失败:', e); }
@@ -600,6 +600,6 @@
     })();
     } // 结束 SITE_DATA 守卫包装
     </script>
-    <script src="script.js"></script>
+    <script src="script.min.js"></script>
 </body>
 </html>
