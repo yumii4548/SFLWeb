@@ -48,9 +48,9 @@
     </script>
     <link rel="preload" as="image" href="images/hero-bg.webp" fetchpriority="high">
     <link rel="preload" as="image" href="images/sfllogo.webp">
-    <link rel="preload" as="style" href="style.css">
-    <link rel="stylesheet" href="css/font-awesome.min.css" media="print" onload="this.media='all';this.onload=null">
-    <link rel="stylesheet" href="style.css">
+    <link rel="preload" as="style" href="style.min.css?v=93600b8">
+    <link rel="stylesheet" href="css/font-awesome.min.css?v=93600b8" media="print" onload="this.media='all';this.onload=null">
+    <link rel="stylesheet" href="style.min.css?v=93600b8">
     <noscript><style>.reveal{opacity:1!important;transform:none!important}</style></noscript>
 </head>
 <body class="page-home">
@@ -369,7 +369,7 @@
         </section>
     </main>
 
-    <script src="common.min.js"></script>
+    <script src="common.min.js?v=93600b8"></script>
     <script>
         // 注入导航和页脚（安全调用）
         try { if (typeof injectLayout === 'function') injectLayout('hero'); } catch(e) { console.warn('布局注入失败:', e); }
@@ -605,6 +605,6 @@
     })();
     } // 结束 SITE_DATA 守卫包装
     </script>
-    <script src="script.min.js"></script>
+    <script src="script.min.js?v=93600b8"></script>
 </body>
 </html>
