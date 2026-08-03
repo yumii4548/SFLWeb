@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>业务服务 - 极鱼社 Swift Fish Lab</title>
+    <meta name="description" content="极鱼社业务服务 - MC皮肤定制、建筑承包、全版本存档互通、拼豆像素画图纸定制">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+    <noscript><style>.reveal{opacity:1!important;transform:none!important}</style></noscript>
+</head>
+<body class="page-services">
+    <main>
+        <section class="page-banner">
+            <div class="banner-bg"></div>
+            <div class="container">
+                <div class="breadcrumb"><a href="index.html">首页</a><i class="fa-solid fa-chevron-right"></i><span>业务服务</span></div>
+                <h1 class="banner-title reveal">业务服务</h1>
+                <p class="banner-subtitle reveal">四大核心业务，专业团队为你服务</p>
+            </div>
+        </section>
+
+        <!-- Services Detail (JS渲染) -->
+        <section class="section services-detail">
+            <div class="container">
+                <div class="services-list" id="servicesList"></div>
+            </div>
+        </section>
+
+        <!-- Process -->
+        <section class="section process-section">
+            <div class="container">
+                <div class="section-head reveal">
+                    <span class="section-tag">OUR PROCESS</span>
+                    <h2 class="section-title">服务流程</h2>
+                    <div class="section-divider"></div>
+                    <p class="section-subtitle">从沟通到交付，每一步都专业透明</p>
+                </div>
+                <div class="process-flow">
+                    <div class="process-step reveal" style="--delay:0s"><div class="step-number">01</div><div class="step-icon"><i class="fa-solid fa-comments"></i></div><h3>需求沟通</h3><p>了解你的具体需求和期望效果</p></div>
+                    <div class="process-connector"></div>
+                    <div class="process-step reveal" style="--delay:0.15s"><div class="step-number">02</div><div class="step-icon"><i class="fa-solid fa-pen-ruler"></i></div><h3>方案设计</h3><p>制定详细方案，确认价格和周期</p></div>
+                    <div class="process-connector"></div>
+                    <div class="process-step reveal" style="--delay:0.3s"><div class="step-number">03</div><div class="step-icon"><i class="fa-solid fa-hammer"></i></div><h3>定制开发</h3><p>专业团队开始制作，定期汇报进度</p></div>
+                    <div class="process-connector"></div>
+                    <div class="process-step reveal" style="--delay:0.45s"><div class="step-number">04</div><div class="step-icon"><i class="fa-solid fa-circle-check"></i></div><h3>交付验收</h3><p>完成交付，提供后续修改保障</p></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Pricing -->
+        <section class="section pricing-section">
+            <div class="container">
+                <div class="section-head reveal">
+                    <span class="section-tag">PRICING</span>
+                    <h2 class="section-title">服务方式</h2>
+                    <div class="section-divider"></div>
+                    <p class="section-subtitle">灵活的合作方式，满足不同需求</p>
+                </div>
+                <div class="pricing-cards">
+                    <div class="pricing-card reveal">
+                        <div class="pricing-icon"><i class="fa-solid fa-bolt"></i></div>
+                        <h3>单项定制</h3>
+                        <p class="pricing-desc">适合单一需求的客户，快速交付</p>
+                        <div class="pricing-features"><span>✓ 单个服务项目</span><span>✓ 标准交付周期</span><span>✓ 有限次数修改</span><span>✓ 基础售后支持</span></div>
+                        <a href="contact.html" class="btn btn-outline">咨询详情</a>
+                    </div>
+                    <div class="pricing-card featured reveal">
+                        <div class="pricing-popular">推荐</div>
+                        <div class="pricing-icon"><i class="fa-solid fa-star"></i></div>
+                        <h3>套餐合作</h3>
+                        <p class="pricing-desc">适合长期合作伙伴，性价比高</p>
+                        <div class="pricing-features"><span>✓ 多项服务打包</span><span>✓ 优先排期</span><span>✓ 不限次数修改</span><span>✓ 专属客服对接</span><span>✓ 长期技术支持</span></div>
+                        <a href="contact.html" class="btn btn-primary">咨询详情</a>
+                    </div>
+                    <div class="pricing-card reveal">
+                        <div class="pricing-icon"><i class="fa-solid fa-handshake"></i></div>
+                        <h3>项目合作</h3>
+                        <p class="pricing-desc">大型项目合作，共创价值</p>
+                        <div class="pricing-features"><span>✓ 全流程服务</span><span>✓ 定制化方案</span><span>✓ 专属团队负责</span><span>✓ 长期维护</span><span>✓ 收益分成模式</span></div>
+                        <a href="contact.html" class="btn btn-outline">咨询详情</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ -->
+        <section class="section faq-section">
+            <div class="container">
+                <div class="section-head reveal">
+                    <span class="section-tag">FAQ</span>
+                    <h2 class="section-title">常见问题</h2>
+                    <div class="section-divider"></div>
+                </div>
+                <div class="faq-list">
+                    <div class="faq-item reveal"><button class="faq-question" aria-expanded="false"><span>如何收费？</span><i class="fa-solid fa-chevron-down"></i></button><div class="faq-answer"><p>根据具体需求定价，单项服务面议，套餐合作享优惠。我们会在沟通后给出详细报价，无隐藏费用。</p></div></div>
+                    <div class="faq-item reveal"><button class="faq-question" aria-expanded="false"><span>交付周期是多久？</span><i class="fa-solid fa-chevron-down"></i></button><div class="faq-answer"><p>根据项目规模不同，从 3 天到数周不等。具体时间会在方案设计阶段明确告知。</p></div></div>
+                    <div class="faq-item reveal"><button class="faq-question" aria-expanded="false"><span>可以修改吗？</span><i class="fa-solid fa-chevron-down"></i></button><div class="faq-answer"><p>当然可以。单项定制包含有限次数修改，套餐合作不限修改次数，确保最终效果满意。</p></div></div>
+                    <div class="faq-item reveal"><button class="faq-question" aria-expanded="false"><span>支持哪些版本的 Minecraft？</span><i class="fa-solid fa-chevron-down"></i></button><div class="faq-answer"><p>支持 Minecraft Java 版、基岩版（含中国版）全版本的皮肤、建筑开发。存档互通服务支持主流版本互转。</p></div></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA -->
+        <section class="section cta-section">
+            <div class="container">
+                <div class="cta-card reveal">
+                    <div class="cta-bg"></div>
+                    <div class="cta-content">
+                        <h2>准备好开始你的项目了吗？</h2>
+                        <p>联系我们获取详细方案和报价</p>
+                        <a href="contact.html" class="btn btn-primary btn-lg"><i class="fa-solid fa-rocket"></i> 立即咨询</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="common.js"></script>
+    <script>
+        try { injectLayout('services'); } catch(e) { console.warn('布局注入失败:', e); }
+        if (typeof SITE_DATA === 'undefined') { console.warn('common.js 未加载'); } else {
+
+        // 渲染服务详情
+        (function() {
+            var list = document.getElementById('servicesList');
+            if (!list) return;
+            SITE_DATA.SERVICES.forEach(function(s, idx) {
+                var item = document.createElement('div');
+                item.className = 'service-detail-item reveal' + (idx % 2 === 1 ? ' reverse' : '');
+                item.id = s.id;
+                item.style.setProperty('--delay', (idx * 0.1) + 's');
+                var features = s.features.map(function(f) {
+                    return '<li><i class="fa-solid fa-check"></i> ' + f + '</li>';
+                }).join('');
+                item.innerHTML =
+                    '<div class="detail-visual" style="--accent:' + s.color + '">' +
+                    '  <div class="visual-decoration"></div>' +
+                    '  <div class="visual-card"><span class="visual-emoji">' + s.icon + '</span></div>' +
+                    '  <div class="floating-tag tag-1" style="color:' + s.color + '">' + s.badge + '</div>' +
+                    '</div>' +
+                    '<div class="detail-content">' +
+                    '  <div class="detail-badge">' + s.subtitle + '</div>' +
+                    '  <h2>' + s.name + '</h2>' +
+                    '  <p class="detail-desc">' + s.desc + '</p>' +
+                    '  <div class="detail-features"><h4>服务内容</h4><ul>' + features + '</ul></div>' +
+                    '  <div class="detail-action">' +
+                    '    <span class="price">起步价 <strong>' + s.price + '</strong></span>' +
+                    '    <a href="contact.html?service=' + s.id + '" class="btn btn-primary">立即咨询 <i class="fa-solid fa-arrow-right"></i></a>' +
+                    '  </div>' +
+                    '</div>';
+                list.appendChild(item);
+            });
+        })();
+
+    } // 结束 SITE_DATA 守卫
+    </script>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,14 @@
+# Claude Code
+.claude/
+
+# VS Code
+.vscode/
+
+# OS
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# Temp
+*.tmp
+*.log
