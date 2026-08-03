@@ -95,7 +95,8 @@
         { name: 'a_12', role: '社群运营', desc: 'a_12负责团队社群日常运营与玩家互动，活跃于QQ群、频道等多个社群渠道，热忱解答玩家疑问，维护社群氛围，是团队与玩家之间的重要桥梁。', avatar: 'fa-solid fa-user', color: '#06b6d4', image: 'images/a12.webp' },
         { name: '苦芒', role: '前社团开平运营', desc: '苦芒是前社团开平运营。', avatar: 'fa-solid fa-user', color: '#f59e0b', image: 'images/km.webp' },
         { name: 'kino', role: 'Addon作者 / 建模师', desc: 'kino_noikce是一位优秀的建模师，他擅长将头脑中的创意转变为实际，尤其擅长创作汽车模型和科幻风格配件的3D设计，代表作品《复古科幻载具包》深受玩家喜爱。', avatar: 'fa-solid fa-user', color: '#8b5cf6', image: 'images/kn.webp' },
-        { name: '陌笙', role: '皮肤作者 / 常稿画师', desc: '陌笙是一位优秀的皮肤创作者，擅长休闲简约风格的皮肤绘制与配色，作品清新自然、广受好评。陌笙的个人开发者：哲是个工作室。', avatar: 'fa-solid fa-user', color: '#f43f5e', image: 'images/ms.webp' }
+        { name: '陌笙', role: '皮肤作者 / 常稿画师', desc: '陌笙是一位优秀的皮肤创作者，擅长休闲简约风格的皮肤绘制与配色，作品清新自然、广受好评。陌笙的个人开发者：哲是个工作室。', avatar: 'fa-solid fa-user', color: '#f43f5e', image: 'images/ms.webp' },
+        { name: '亨升', role: '建筑作者 / 古建筑设计师', desc: '亨升精通明清古建筑风格设计与建造，擅长将历史建筑以方块形式高度还原，代表作品《明清风格明堂》展现了其对古建筑形制的深刻理解与精湛技艺。', avatar: 'fa-solid fa-user', color: '#f59e0b', image: 'images/hs.webp' }
     ];
 
     var SHOP_ITEMS = [
@@ -124,7 +125,7 @@
         { name: '云筑设计团队', url: 'https://v.douyin.com/8_n7XMWClPc/', desc: '现代式建筑团队', icon: 'fa-solid fa-building', color: '#8b5cf6' },
         { name: '鸽予文化', url: '#', desc: '新媒体宣发及文化设计', icon: 'fa-solid fa-feather', color: '#10b981' },
         { name: '宇创领航工作室', url: 'https://vhwork.cn/', desc: 'MC中国版综合开发工作室', icon: 'fa-solid fa-rocket', color: '#94a3b8' },
-        { name: 'MewBaka笨猫工作室', url: '#', desc: '视觉小说游戏引擎开发', icon: 'fa-solid fa-cat', color: '#f97316' },
+        { name: 'MewBaka笨猫工作室', url: 'https://www.mewbaka.cn/', desc: '视觉小说游戏引擎开发', icon: 'fa-solid fa-cat', color: '#f97316' },
         { name: '预留链接', url: '#', desc: '', icon: 'fa-solid fa-link', color: '#94a3b8' },
         { name: '预留链接', url: '#', desc: '', icon: 'fa-solid fa-link', color: '#94a3b8' }
     ];
