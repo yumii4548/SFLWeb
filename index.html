@@ -497,18 +497,19 @@
             });
         })();
 
-        // 渲染皮肤作品 - 流动轮播（1:1原图 + 底部蒙版）
+        // 渲染皮肤作品 - 流动轮播（自动滚动 + 手动索引）
         (function() {
             var track = document.getElementById('skinsTrack');
-            var dots = document.getElementById('skinsDots');
+            var dotsContainer = document.getElementById('skinsDots');
             if (!track) return;
             var skins = SITE_DATA.WORKS.skins;
-            // 复制两份实现无缝流动
-            var allSkins = skins.concat(skins);
+            var totalSkins = skins.length;
+
+            // 三份复制实现无缝双向滚动
+            var allSkins = skins.concat(skins).concat(skins);
             allSkins.forEach(function(s, idx) {
                 var card = document.createElement('div');
                 card.className = 'skin-card';
-                var cardIdx = idx % skins.length;
                 var imgHtml = s.image
                     ? '<img src="' + s.image + '" alt="' + s.title + '" class="skin-img" loading="lazy" decoding="async" onerror="this.outerHTML=\'<div class=\\\'skin-img-placeholder\\\'><i class=\\\'fa-solid fa-user\\\'></i><span class=\\\'ph-label\\\'>图片预留位</span></div>\'">'
                     : '<div class="skin-img-placeholder"><i class="fa-solid fa-user"></i><span class="ph-label">图片预留位</span></div>';
@@ -521,15 +522,86 @@
                     '</div>';
                 track.appendChild(card);
             });
-            // 生成指示点
-            if (dots) {
+
+            // 动态计算步长（卡片宽度 + 间距），响应式自适应
+            function getStep() {
+                var cards = track.querySelectorAll('.skin-card');
+                if (cards.length < 2) return 328;
+                return cards[1].getBoundingClientRect().left - cards[0].getBoundingClientRect().left;
+            }
+
+            // 渲染可点击指示点
+            var allDots = [];
+            var activeDotIdx = 0;
+            if (dotsContainer) {
                 skins.forEach(function(s, idx) {
                     var dot = document.createElement('button');
                     dot.className = 'skin-dot' + (idx === 0 ? ' active' : '');
-                    dot.setAttribute('aria-label', '第' + (idx + 1) + '组皮肤');
-                    dots.appendChild(dot);
+                    dot.setAttribute('aria-label', s.title);
+                    dot.addEventListener('click', function() { goToSkin(idx); });
+                    dotsContainer.appendChild(dot);
+                    allDots.push(dot);
                 });
             }
+
+            function updateDots(virtualIdx) {
+                if (!allDots.length) return;
+                var idx = Math.round(virtualIdx) % totalSkins;
+                if (idx < 0) idx += totalSkins;
+                if (idx !== activeDotIdx) {
+                    activeDotIdx = idx;
+                    allDots.forEach(function(d, i) { d.classList.toggle('active', i === activeDotIdx); });
+                }
+            }
+
+            // 状态
+            var virtualIndex = totalSkins;   // 从中间拷贝开始（索引 N ~ 2N-1）
+            var speed = 1.6;                  // px/frame ≈ 96px/s，与原来50s动画接近
+            var paused = false;
+            var manualTarget = null;          // 手动目标（虚拟索引）
+            var resumeTimer = null;
+
+            function goToSkin(idx) {
+                manualTarget = totalSkins + idx; // 中间拷贝的第 idx 个
+                clearTimeout(resumeTimer);
+                resumeTimer = setTimeout(function() { manualTarget = null; }, 5000);
+            }
+
+            function animate() {
+                if (!paused) {
+                    var step = getStep();
+
+                    if (manualTarget !== null) {
+                        var diff = manualTarget - virtualIndex;
+                        if (Math.abs(diff) < 0.03) {
+                            virtualIndex = manualTarget;
+                            manualTarget = null;
+                        } else {
+                            virtualIndex += diff * 0.1; // 缓动
+                        }
+                    } else {
+                        virtualIndex += speed / step;
+                    }
+
+                    // 回绕：保持在中间拷贝范围内
+                    while (virtualIndex >= totalSkins * 2) virtualIndex -= totalSkins;
+                    while (virtualIndex < totalSkins)     virtualIndex += totalSkins;
+
+                    track.style.transform = 'translateX(' + (-virtualIndex * step) + 'px)';
+                    updateDots(virtualIndex);
+                }
+                requestAnimationFrame(animate);
+            }
+
+            // 悬停暂停
+            track.addEventListener('mouseenter', function() { paused = true; });
+            track.addEventListener('mouseleave', function() { paused = false; });
+            if (dotsContainer) {
+                dotsContainer.addEventListener('mouseenter', function() { paused = true; });
+                dotsContainer.addEventListener('mouseleave', function() { paused = false; });
+            }
+
+            requestAnimationFrame(animate);
         })();
 
         // 渲染在售资源

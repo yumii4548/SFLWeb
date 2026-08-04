@@ -3384,15 +3384,11 @@ ul, ol { list-style: none; }
 .skins-track {
     display: flex;
     gap: 28px;
-    animation: skinFlow 50s linear infinite;
     width: max-content;
+    will-change: transform;
 }
 .skins-track:hover {
-    animation-play-state: paused;
-}
-@keyframes skinFlow {
-    from { transform: translateX(0); }
-    to { transform: translateX(-50%); }
+    /* pause handled by JS */
 }
 .skin-card {
     flex-shrink: 0;

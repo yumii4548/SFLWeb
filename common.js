@@ -68,7 +68,10 @@
             { id: 'skin-9', title: '雨息', author: '陌笙', category: '萌系风', image: 'images/skin-9.webp' },
             { id: 'skin-10', title: '玲玲小姐姐', author: '元初', category: '搞怪风', image: 'images/skin-10.webp' },
             { id: 'skin-11', title: '唐 - 仕女', author: '浔昇', category: '古风', image: 'images/skin-11.webp' },
-            { id: 'skin-12', title: '余晖', author: '残缺', category: '萌系风', image: 'images/skin-12.webp' }
+            { id: 'skin-12', title: '余晖', author: '残缺', category: '萌系风', image: 'images/skin-12.webp' },
+            { id: 'skin-13', title: '北笙&南笺', author: 'SFL皮肤组', category: '姐妹款', image: 'images/skin-13.webp' },
+            { id: 'skin-14', title: '浔昇休闲装', author: '浔昇', category: '日常风', image: 'images/skin-15.webp' },
+            { id: 'skin-15', title: '小源', author: '元谋YUMI', category: '萌系风', image: 'images/skin-14.webp' }
         ]
     };
 
@@ -82,12 +85,13 @@
     ];
 
     var MEMBERS = [
-        { name: '元谋YUMI', role: '团队负责人 / 运营 / Addon作者 / 地图指令 / 画师 / 策划 / 编辑', desc: '团队负责人，负责策略规划与资源对接，是MC中国版多款热门模组的开发者，部分免费模组的下载量超过100w，同时是音乐人和vocaloid领域的创作者。', avatar: 'fa-solid fa-crown', color: '#f59e0b', image: 'images/ym.webp', links: [{ name: 'B站', icon: 'fa-brands fa-bilibili', url: 'https://b23.tv/tK9lhP5', class: 'bilibili' }, { name: '抖音', icon: 'fa-brands fa-tiktok', url: '#', class: 'douyin' }] },
-        { name: '浔昇-SFL🐟', role: '团队负责人 / 尚国营建负责人 / 建筑作者 / Addon作者 / 画师 / 策划', desc: '浔昇是团队负责人及团队古建筑设计总监，擅长唐、宋、明、清的多体制和风格古建筑建造，还是才华横溢的贴图画师，代表作品众多。', avatar: 'fa-solid fa-chess-rook', color: '#8b5cf6', image: 'images/xs.webp', links: [{ name: 'B站', icon: 'fa-brands fa-bilibili', url: '#', class: 'bilibili' }, { name: '抖音', icon: 'fa-brands fa-tiktok', url: '#', class: 'douyin' }] },
+        { name: '元谋YUMI', role: '团队负责人 / 运营 / Addon作者 / 地图指令 / 画师 / 策划 / 编辑', desc: '团队负责人，负责策略规划与资源对接，是MC中国版多款热门模组的开发者，部分免费模组的下载量超过100w，同时是音乐人和vocaloid领域的创作者。', avatar: 'fa-solid fa-crown', color: '#f59e0b', image: 'images/ym.webp', links: [{ name: 'B站', icon: 'fa-brands fa-bilibili', url: 'https://b23.tv/tK9lhP5', class: 'bilibili' }, { name: '抖音', icon: 'fa-brands fa-tiktok', url: 'https://v.douyin.com/pWj7jEfEBwQ/', class: 'douyin' }] },
+        { name: '浔昇-SFL🐟', role: '团队负责人 / 尚国营建负责人 / 建筑作者 / Addon作者 / 画师 / 策划', desc: '浔昇是团队负责人及团队古建筑设计总监，擅长唐、宋、明、清的多体制和风格古建筑建造，还是才华横溢的贴图画师，代表作品众多。', avatar: 'fa-solid fa-chess-rook', color: '#8b5cf6', image: 'images/xs.webp', links: [{ name: 'B站', icon: 'fa-brands fa-bilibili', url: 'https://b23.tv/ZFCrkKc', class: 'bilibili' }, { name: '抖音', icon: 'fa-brands fa-tiktok', url: 'https://v.douyin.com/E6XRgab3btM/', class: 'douyin' }] },
         { name: '浩歌', role: 'HG Studio 负责人 / 建筑作者', desc: '浩歌是现代建筑设计总监，擅长科幻都市风格的建筑大观创作，浩歌的个人开发者账号：HG2025。', avatar: 'fa-solid fa-city', color: '#0ea5e9', image: 'images/hg.webp' },
         { name: '翎汐RingShi', role: 'SFL首席筑梦师 / 社群运营 / 自媒体运营', desc: '“笑裁青丝绣彩霓，怀拥妙笔字珠玑。自生芳华化翎羽，长守清心待春汐。” \n翎汐是SFL社团原创虚拟形象，生日6月8日，作为团队首席筑梦师，总会在大家没有灵感的时候出面解决问题；同时作为虚拟形象对外展示社团风采。', avatar: 'fa-solid fa-palette', color: '#ec4899', image: 'images/lx.webp' },
         { name: '元初', role: '社群运营 / 皮肤画师', desc: '元初不但擅长MC皮肤绘制，还擅长指绘，他的风格多样，在多个平台都得到了很多人的喜爱。同时元初和元谋一起完成了多个音mad鬼畜企划，负责视频剪辑工作。', avatar: 'fa-solid fa-microchip', color: '#10b981', image: 'images/yc.webp' },
         { name: '空空', role: '建筑作者 / 玩法地图作者 / 建筑策划', desc: '空空擅长现代风、中世纪风的建筑创作，参与了团队组织多个地图立项的活动。', avatar: 'fa-solid fa-paint-brush', color: '#ef4444', image: 'images/kk.webp' },
+        { name: '小源', role: '剪辑师', desc: '小源是团队视频剪辑师，独立运营多个万粉抖音账号，拥有丰富的新媒体运营与短视频内容创作经验，擅长捕捉热点打造爆款视频。', avatar: 'fa-solid fa-clapperboard', color: '#6366f1', image: 'images/xy.webp', links: [{ name: '抖音', icon: 'fa-brands fa-tiktok', url: 'https://v.douyin.com/pqT9AG5TlCo/', class: 'douyin' }] },
         { name: '挽留', role: '玩法地图作者 / 指令师', desc: '挽留精通玩法地图的策划与实现落地，打造了《杀戮迷宫》、《末日之后》等多个爆款地图，同时挽留还是经验丰富的指令师，对团队做出了不可磨灭的贡献。', avatar: 'fa-solid fa-user-tie', color: '#06b6d4', image: 'images/wl.webp' },
         { name: '亨升', role: '建筑作者 / 古建筑设计师', desc: '亨升精通明清古建筑风格设计与建造，擅长将历史建筑以方块形式高度还原，代表作品《明清风格明堂》展现了其对古建筑形制的深刻理解与精湛技艺。', avatar: 'fa-solid fa-user', color: '#f59e0b', image: 'images/hs.webp' },
         { name: '残缺', role: '皮肤作者 / 常稿画师', desc: '残缺(雨中观花)是一位才华横溢的皮肤画师，她擅长多种风格的MC皮肤贴图绘制。作为团队的常稿画师，受到广泛好评。', avatar: 'fa-solid fa-clipboard-check', color: '#84cc16', image: 'images/cq.webp' },
