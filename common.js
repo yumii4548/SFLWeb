@@ -107,7 +107,7 @@
         { title: '北京明紫禁城地图存档1.21及以上版本通用', category: '建筑存档', price: '¥45', original: '¥69.9', icon: 'fa-user-ninja', desc: '1:1还原北京明代紫禁城建筑群', tag: '热销', tagColor: '#ef4444', image: 'images/sp1.webp' },
         { title: '【像素拼豆】 MC物品全图鉴拼豆图纸', category: '图纸包', price: '¥17.99', original: '¥19.9', icon: 'fa-chess-rook', desc: '人工识色、原创手绘MC物品拼豆图纸包', tag: '限时', tagColor: '#f59e0b', image: 'images/sp2.webp' },
         { title: '长安唐大明宫地图存档1.21及以上版本通用', category: '建筑存档', price: '¥89', original: '¥119.9', icon: 'fa-gears', desc: '1:1还原唐代大明宫建筑群，气势恢宏的宫殿存档', tag: '新品', tagColor: '#10b981', image: 'images/sp3.webp' },
-        { title: '明清风格明堂', category: '拼豆图纸', price: '¥13', original: '¥29.9', icon: 'fa-cubes', desc: '基于武则天时期洛阳城万象神宫（明堂）重构的明清风古建', tag: '超值', tagColor: '#8b5cf6', image: 'images/sp4.webp' },
+        { title: '明清风格明堂', category: '建筑存档', price: '¥13', original: '¥29.9', icon: 'fa-cubes', desc: '基于武则天时期洛阳城万象神宫（明堂）重构的明清风古建', tag: '超值', tagColor: '#8b5cf6', image: 'images/sp4.webp' },
         { title: 'Mard全系291色建筑方块拓展包', category: '新品Addon', price: '¥3.6', original: '¥6', icon: 'fa-tree', desc: '以Mard拼豆色谱为灵感1:1复刻，覆盖15大类291款纯色方块，弥补原版色彩空白；支持聊天栏输入色号一键取块、空格分隔批量调取，内置对照图纸与说明书，像素画、彩绘、造景全覆盖。', tag: '必备', tagColor: '#06b6d4', image: 'images/sp5.webp' },
         { title: '北宋皇家道观地图存档1.21及以上版本通用', category: '建筑存档', price: '¥35', original: '¥58', icon: 'fa-city', desc: '宋风皇家道观建筑群存档，庄重典雅的宗教建筑大观，适配生存与创造模式', tag: '推荐', tagColor: '#0ea5e9', image: 'images/sp6.webp' }
     ];
